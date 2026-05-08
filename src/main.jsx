@@ -4,13 +4,15 @@ import { BrowserRouter, Routes, Route } from 'react-router'
 import './index.css'
 import App from './App.jsx'
 import Infektion from './pages/Infektion.jsx'
+import KM1 from "./pages/KM1.jsx";
 
 
-createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="/infektion" element={<Infektion />} />
-    </Routes>
-  </BrowserRouter>,
-)
+createRoot(document.getElementById("root")).render(
+	<BrowserRouter>
+		<Routes>
+			<Route path="/" element={<App />} />
+			<Route path="/infektion" element={<Infektion />} />
+			<Route path="/km1" element={<KM1 />} />
+		</Routes>
+	</BrowserRouter>
+);

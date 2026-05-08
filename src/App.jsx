@@ -1,23 +1,22 @@
 import { useNavigate } from "react-router";
 
 const AMNEN = [
-  {
-    id: "infektion",
-    titel: "Infektioner",
-    beskrivning: "Behandlingar, antibiotika & antivirala medel",
-    path: "/infektion",
-    emoji: "🦠",
-    aktiv: true,
-  },
-  // Lägg till fler ämnen här, t.ex.:
-  // {
-  //   id: "kardiologi",
-  //   titel: "Kardiologi",
-  //   beskrivning: "Hjärtsjukdomar & behandling",
-  //   path: "/kardiologi",
-  //   emoji: "🫀",
-  //   aktiv: false,
-  // },
+	{
+		id: "infektion",
+		titel: "Infektioner",
+		beskrivning: "Behandlingar, antibiotika & antivirala medel",
+		path: "/infektion",
+		emoji: "🦠",
+		aktiv: true,
+	},
+	{
+		id: "km1",
+		titel: "KM1",
+		beskrivning: "Intermedicin repetition",
+		path: "/km1",
+		emoji: "📚",
+		aktiv: true,
+	},
 ];
 
 export default function App() {
