@@ -1,0 +1,329 @@
+[
+  {
+    "id": 1,
+    "diagnos": "Sepsis",
+    "kategori": "Bakteriell",
+    "behandling": [
+      "Pip/taz + cefotaxim",
+      "Septisk chock: pip/taz + gentamicin ELLER meropenem"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 2,
+    "diagnos": "Endokardit – nativ klaff",
+    "kategori": "Bakteriell",
+    "behandling": [
+      "Bensyl-PC (GAS/streptokocker)",
+      "Kloxacillin (S. aureus)",
+      "Vankomycin (vid MRSA)"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 3,
+    "diagnos": "Endokardit – protesinfektion",
+    "kategori": "Bakteriell",
+    "behandling": [
+      "Vankomycin ± rifampicin + aminoglykosid"
+    ],
+    "kommentar": "Vankomycin förstahand pga MRSA-risk."
+  },
+  {
+    "id": 4,
+    "diagnos": "Candida",
+    "kategori": "Svamp",
+    "behandling": [
+      "Echinocandin (förstahand)",
+      "Flukonazol (känslig stam, stabil patient)"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 5,
+    "diagnos": "Erysipelas",
+    "kategori": "Bakteriell",
+    "behandling": [
+      "PcV po (lindrig–måttlig)",
+      "PcG iv (svår)",
+      "5-poängssystemet styr dos"
+    ],
+    "kommentar": "Diabetessår: bredare täckning behövs."
+  },
+  {
+    "id": 6,
+    "diagnos": "Nekrotiserande fasciit",
+    "kategori": "Bakteriell",
+    "behandling": [
+      "PcG + klindamycin + karbapenem",
+      "Akut kirurgi"
+    ],
+    "kommentar": "Klindamycin hämmar toxinproduktion."
+  },
+  {
+    "id": 7,
+    "diagnos": "Hund-/kattbett",
+    "kategori": "Bakteriell",
+    "behandling": [
+      "Tidigt (≤2 dygn, rent): PcV",
+      "Sent/infekterat/kattbett: amoxicillin-klavulansyra",
+      "Pc-allergi: doxycyklin"
+    ],
+    "kommentar": "PcV täcker inte Pasteurella – använd amox-klavulansyra vid osäkerhet."
+  },
+  {
+    "id": 8,
+    "diagnos": "Erythema migrans",
+    "kategori": "Bakteriell",
+    "behandling": [
+      "Enstaka: PcV 10 dagar",
+      "Multipla/spridd: doxycyklin"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 9,
+    "diagnos": "Tularemi",
+    "kategori": "Bakteriell",
+    "behandling": [
+      "Ciprofloxacin (förstahand)",
+      "Doxycyklin (alternativ)",
+      "Gentamicin iv (svår sjukdom)"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 10,
+    "diagnos": "Septisk artrit",
+    "kategori": "Bakteriell",
+    "behandling": [
+      "Kloxacillin",
+      "Cefotaxim (vid buk-/urinvägsfokus)"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 11,
+    "diagnos": "Protesinfektion (led)",
+    "kategori": "Bakteriell",
+    "behandling": [
+      "Kloxacillin + rifampicin"
+    ],
+    "kommentar": "Rifampicin penetrerar biofilm. Ofta kirurgisk revision."
+  },
+  {
+    "id": 12,
+    "diagnos": "Spondylit / diskit",
+    "kategori": "Bakteriell",
+    "behandling": [
+      "Akut: cefotaxim",
+      "Subakut: vänta på odlingssvar"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 13,
+    "diagnos": "Tuberkulos (TBC)",
+    "kategori": "Bakteriell",
+    "behandling": [
+      "HRZE × 2 mån → HR × 4 mån",
+      "Isoniazid + rifampicin + pyrazinamid + etambutol"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 14,
+    "diagnos": "Influensa",
+    "kategori": "Viral",
+    "behandling": [
+      "Oseltamivir (Tamiflu)",
+      "Ge inom 48 h från symptomdebut"
+    ],
+    "kommentar": "Indikation: riskgrupper, svår sjukdom, immunosupprimerade."
+  },
+  {
+    "id": 15,
+    "diagnos": "Bakteriell meningit",
+    "kategori": "Bakteriell",
+    "behandling": [
+      "Cefotaxim 3g × 4 + ampicillin 3g × 4",
+      "Alternativ: meropenem 2g × 3"
+    ],
+    "kommentar": "Ampicillin täcker Listeria (äldre, gravida, immunosupprimerade)."
+  },
+  {
+    "id": 16,
+    "diagnos": "Hjärnabscess",
+    "kategori": "Bakteriell",
+    "behandling": [
+      "Cefotaxim + metronidazol"
+    ],
+    "kommentar": "Kirurgisk dränering vid stor abscess."
+  },
+  {
+    "id": 17,
+    "diagnos": "Viral encefalit (HSV)",
+    "kategori": "Viral",
+    "behandling": [
+      "Aciklovir iv",
+      "10 mg/kg × 3, 14–21 dagar"
+    ],
+    "kommentar": "Ge empiriskt vid misstanke – fördröjning ökar mortalitet."
+  },
+  {
+    "id": 18,
+    "diagnos": "Neuroborrelios",
+    "kategori": "Bakteriell",
+    "behandling": [
+      "Doxycyklin po (lindrig–måttlig)",
+      "Ceftriaxon iv (svår)"
+    ],
+    "kommentar": "Diagnos via likvor: pleocytos + Borrelia-antikroppar."
+  },
+  {
+    "id": 19,
+    "diagnos": "TBE",
+    "kategori": "Viral",
+    "behandling": [
+      "Ingen antiviral behandling",
+      "Symtomatisk"
+    ],
+    "kommentar": "IgM i serum = diagnostik. Profylax: vaccination."
+  },
+  {
+    "id": 20,
+    "diagnos": "HIV",
+    "kategori": "Viral",
+    "behandling": [
+      "INSTI-baserad kombinationsregim",
+      "1–4 tabletter/dag"
+    ],
+    "kommentar": "Val beror på resistens och komorbiditeter."
+  },
+  {
+    "id": 21,
+    "diagnos": "Ascaris (spolmask)",
+    "kategori": "Parasit/mask",
+    "behandling": [
+      "Albendazol"
+    ],
+    "kommentar": "Mebendazol är alternativ."
+  },
+  {
+    "id": 22,
+    "diagnos": "Cutaneous larva migrans",
+    "kategori": "Parasit/mask",
+    "behandling": [
+      "Ivermektin"
+    ],
+    "kommentar": "Albendazol alternativ."
+  },
+  {
+    "id": 23,
+    "diagnos": "Enterobius (springmask)",
+    "kategori": "Parasit/mask",
+    "behandling": [
+      "Mebendazol",
+      "Upprepa efter 2 veckor",
+      "Behandla hela hushållet"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 24,
+    "diagnos": "Strongyloides",
+    "kategori": "Parasit/mask",
+    "behandling": [
+      "Ivermektin"
+    ],
+    "kommentar": "Risk för hyperinfektionssyndrom vid immunosuppression."
+  },
+  {
+    "id": 25,
+    "diagnos": "Entamoeba / Giardia",
+    "kategori": "Parasit/mask",
+    "behandling": [
+      "Metronidazol (Flagyl)"
+    ],
+    "kommentar": "Vid Entamoeba: följ upp med paromomycin (luminalt medel)."
+  },
+  {
+    "id": 26,
+    "diagnos": "Vibrio cholerae",
+    "kategori": "Bakteriell",
+    "behandling": [
+      "Vätskeersättning (ORS/iv) – viktigast",
+      "Doxycyklin engångsdos"
+    ],
+    "kommentar": "Azitromycin alternativ, särskilt för barn."
+  },
+  {
+    "id": 27,
+    "diagnos": "Febril neutropeni",
+    "kategori": "Bakteriell",
+    "behandling": [
+      "Pip/taz eller meropenem",
+      "Eskalera om ej förbättring 48–72 h"
+    ],
+    "kommentar": "Starta empirisk behandling omedelbart."
+  },
+  {
+    "id": 28,
+    "diagnos": "Brucella",
+    "kategori": "Bakteriell",
+    "behandling": [
+      "Doxycyklin + rifampicin (6 veckor)",
+      "Alternativ: doxycyklin + gentamicin"
+    ],
+    "kommentar": "Kombinationsbehandling krävs – monoterapi ger relaps."
+  },
+  {
+    "id": 29,
+    "diagnos": "Leptospiros",
+    "kategori": "Bakteriell",
+    "behandling": [
+      "PcG iv (svår sjukdom)",
+      "Doxycyklin po (lindrig)"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 30,
+    "diagnos": "Sorkfeber (hantavirus)",
+    "kategori": "Viral",
+    "behandling": [
+      "Symtomatisk",
+      "Vätskebalans, dialys vid njursvikt"
+    ],
+    "kommentar": "Serologi = diagnostik. Ingen antiviral behandling."
+  },
+  {
+    "id": 31,
+    "diagnos": "Shigella",
+    "kategori": "Bakteriell",
+    "behandling": [
+      "Azitromycin (alltid)"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 32,
+    "diagnos": "Salmonella – icke-tyfoid (okomplicerad)",
+    "kategori": "Bakteriell",
+    "behandling": [
+      "Ingen antibiotika",
+      "Ev. azitromycin/ciprofloxacin vid svår sjukdom/riskpatient"
+    ],
+    "kommentar": "Antibiotika förlänger bärarskap vid lindrig gastroenterit."
+  },
+  {
+    "id": 33,
+    "diagnos": "Tyfoidfeber (S. typhi/paratyphi)",
+    "kategori": "Bakteriell",
+    "behandling": [
+      "Cefotaxim / meropenem (iv)",
+      "Azitromycin / ciprofloxacin (känslig stam, po)"
+    ],
+    "kommentar": ""
+  }
+]
