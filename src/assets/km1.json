@@ -1,1013 +1,884 @@
 [
-  {
-    "id": "kol-exacerbation",
-    "category": "lungor",
-    "title": "KOL-exacerbation",
-    "summary": "Akut försämring med bronkdilaterare, antibiotika vid misstänkt bakteriell genes och kort steroidkur.",
-    "tags": [
-      "KOL",
-      "prednisolon",
-      "antibiotika"
-    ],
-    "points": [
-      {
-        "type": "behandling",
-        "label": "Bronkdilaterare",
-        "text": "Combivent eller motsvarande inhalationsbehandling vid exacerbation."
-      },
-      {
-        "type": "behandling",
-        "label": "Antibiotika",
-        "text": "Amoxicillin eller doxycyklin vid misstänkt bakteriell exacerbation."
-      },
-      {
-        "type": "behandling",
-        "label": "Steroid",
-        "text": "Prednisolon i cirka 5 dygn."
-      }
-    ]
-  },
-  {
-    "id": "pneumoni-immunsuppression",
-    "category": "infektion",
-    "title": "Pneumoni hos immunsupprimerad",
-    "summary": "Tänk bredare etiologi och använd riktad diagnostik vid oklar bild.",
-    "tags": [
-      "pneumoni",
-      "immunsuppression",
-      "BAL",
-      "ground glass"
-    ],
-    "points": [
-      {
-        "type": "diagnos",
-        "label": "Radiologi",
-        "text": "Ground-glass-förändringar i anteckningen kopplas till behov av vidare utredning."
-      },
-      {
-        "type": "diagnos",
-        "label": "BAL",
-        "text": "BAL anges som diagnostisk metod vid svårtolkad eller opportunistisk pneumoni."
-      },
-      {
-        "type": "komihag",
-        "label": "Immunsuppression",
-        "text": "Låg tröskel för atypiska/opportunistiska agens och riktad provtagning."
-      }
-    ]
-  },
-  {
-    "id": "kikhosta",
-    "category": "infektion",
-    "title": "Kikhosta",
-    "summary": "Anmälnings-/spårningsrelevant infektion enligt anteckningen.",
-    "tags": [
-      "kikhosta",
-      "smittspårning"
-    ],
-    "points": [
-      {
-        "type": "diagnos",
-        "label": "Provtagning",
-        "text": "Laboratorieverifiering styr fortsatt handläggning."
-      },
-      {
-        "type": "varning",
-        "label": "Smittspårning",
-        "text": "Anteckningen markerar smittspårning vid laboratoriebekräftad kikhosta."
-      }
-    ]
-  },
-  {
-    "id": "nefritiskt-nefrotiskt",
-    "category": "njure",
-    "title": "Nefritiskt vs nefrotiskt syndrom",
-    "summary": "Två olika njurmönster: inflammatoriskt glomerulärt syndrom respektive kraftig proteinuri.",
-    "tags": [
-      "nefrit",
-      "nefros",
-      "proteinuri",
-      "hematuri"
-    ],
-    "points": [
-      {
-        "type": "klinik",
-        "label": "Nefritiskt",
-        "text": "Glomerulär inflammation med hematuri och nedsatt njurfunktion som huvudspår."
-      },
-      {
-        "type": "klinik",
-        "label": "Nefrotiskt",
-        "text": "Kraftig proteinuri, hypoalbuminemi och ödem som huvudspår."
-      },
-      {
-        "type": "komihag",
-        "label": "Minimal change",
-        "text": "Minimal change-nefropati nämns som klassiskt hos barn."
-      }
-    ]
-  },
-  {
-    "id": "iga-anca-vaskulit",
-    "category": "njure",
-    "title": "IgA-nefrit, IgA-vaskulit och ANCA-vaskulit",
-    "summary": "Njure + vaskulitmönster i anteckningarna.",
-    "tags": [
-      "IgA",
-      "ANCA",
-      "GPA",
-      "MPA",
-      "purpura"
-    ],
-    "points": [
-      {
-        "type": "diagnos",
-        "label": "IgA-nefrit",
-        "text": "Vanlig glomerulonefrit; tänk hematuri/proteinuri beroende på bild."
-      },
-      {
-        "type": "diagnos",
-        "label": "ANCA",
-        "text": "GPA och MPA kopplas till ANCA-vaskulit i anteckningen."
-      },
-      {
-        "type": "klinik",
-        "label": "IgA-vaskulit",
-        "text": "Purpura och påverkan från flera organsystem nämns som ledtråd."
-      }
-    ]
-  },
-  {
-    "id": "sekundar-hyperpara-ckd",
-    "category": "njure",
-    "title": "Sekundär hyperparatyreoidism vid CKD",
-    "summary": "Rubbat kalk-fosfat-PTH-system vid kronisk njursvikt.",
-    "tags": [
-      "CKD",
-      "PTH",
-      "fosfat",
-      "kalcium"
-    ],
-    "points": [
-      {
-        "type": "lab",
-        "label": "Fosfat",
-        "text": "Fosfat stiger vid CKD."
-      },
-      {
-        "type": "lab",
-        "label": "PTH",
-        "text": "PTH stiger sekundärt."
-      },
-      {
-        "type": "lab",
-        "label": "Kalcium",
-        "text": "Kalcium är ofta normalt eller lågt."
-      }
-    ]
-  },
-  {
-    "id": "raas-ace-sglt2-aki",
-    "category": "njure",
-    "title": "RAAS-hämmare, ACE-i och SGLT2 vid njurrisk",
-    "summary": "Kontroller och tillfällig paus vid dehydrering/AKI-risk.",
-    "tags": [
-      "RAAS",
-      "ACE",
-      "SGLT2",
-      "AKI",
-      "metformin"
-    ],
-    "points": [
-      {
-        "type": "lab",
-        "label": "Vid ACE-i",
-        "text": "Följ blodtryck och njurprover/elektrolyter efter insättning eller dosändring."
-      },
-      {
-        "type": "behandling",
-        "label": "SGLT2",
-        "text": "SGLT2-hämmare nämns i njurskyddande sammanhang."
-      },
-      {
-        "type": "varning",
-        "label": "Dehydrering",
-        "text": "Vid dehydrering/gastroenterit: överväg paus av RAAS-hämmare, SGLT2-hämmare och metformin för att minska AKI-risk."
-      }
-    ]
-  },
-  {
-    "id": "interstitiell-nefrit",
-    "category": "njure",
-    "title": "Interstitiell nefrit",
-    "summary": "Tubulointerstitiell inflammation med typiska urinfynd.",
-    "tags": [
-      "interstitiell nefrit",
-      "pyuri",
-      "proteinuri"
-    ],
-    "points": [
-      {
-        "type": "diagnos",
-        "label": "Urin",
-        "text": "Steril pyuri anges som ledtråd."
-      },
-      {
-        "type": "diagnos",
-        "label": "Proteinuri",
-        "text": "Tubulär proteinuri med små proteiner anges i anteckningen."
-      }
-    ]
-  },
-  {
-    "id": "gikt",
-    "category": "reuma",
-    "title": "Gikt",
-    "summary": "Akut artrit med klassisk stortåled, alkohol/obesitas och nattliga besvär.",
-    "tags": [
-      "gikt",
-      "urat",
-      "ledvätska",
-      "NSAID"
-    ],
-    "points": [
-      {
-        "type": "klinik",
-        "label": "Typiskt",
-        "text": "Akut smärtsam artrit, ofta första MTP-leden/stortåleden och ofta nattliga besvär."
-      },
-      {
-        "type": "klinik",
-        "label": "Risk",
-        "text": "Alkohol och obesitas nämns som riskfaktorer."
-      },
-      {
-        "type": "diagnos",
-        "label": "Ledvätska",
-        "text": "Ledvätskeanalys används för kristallpåvisning vid oklar diagnos."
-      },
-      {
-        "type": "behandling",
-        "label": "Akut",
-        "text": "NSAID nämns som akut behandling om inga kontraindikationer finns."
-      },
-      {
-        "type": "behandling",
-        "label": "Uratmål",
-        "text": "Allopurinol för uratsänkning; målvärde urat <360 µmol/L anges."
-      }
-    ]
-  },
-  {
-    "id": "ra",
-    "category": "reuma",
-    "title": "Reumatoid artrit",
-    "summary": "Inflammatorisk polyartrit med RF/anti-CCP, ledstatus och tidig DMARD-behandling.",
-    "tags": [
-      "RA",
-      "RF",
-      "anti-CCP",
-      "DMARD",
-      "MTX"
-    ],
-    "points": [
-      {
-        "type": "diagnos",
-        "label": "Serologi",
-        "text": "RF och anti-CCP används i diagnostiken; anti-CCP är särskilt specifikt."
-      },
-      {
-        "type": "klinik",
-        "label": "Ledstatus",
-        "text": "Notera ömhet, svullnad, värme, duration och funktionspåverkan."
-      },
-      {
-        "type": "diagnos",
-        "label": "Aktivitet",
-        "text": "Sjukdomsaktivitet bedöms med allmänsymtom, antal svullna/ömma leder, CRP/SR och röntgenfynd."
-      },
-      {
-        "type": "behandling",
-        "label": "DMARD",
-        "text": "Alla med RA ska ha DMARD vid diagnos enligt anteckningen."
-      },
-      {
-        "type": "behandling",
-        "label": "Steg",
-        "text": "MTX + prednisolon som brygga; därefter biologiskt läkemedel/TNF-hämmare eller JAK-hämmare vid behov."
-      }
-    ]
-  },
-  {
-    "id": "spondylartrit",
-    "category": "reuma",
-    "title": "Spondylartrit / ankyloserande spondylit",
-    "summary": "Axial inflammatorisk sjukdom med sakroiliit och extraartikulära manifestationer.",
-    "tags": [
-      "spondylartrit",
-      "sakroiliit",
-      "irit",
-      "IBD",
-      "NSAID"
-    ],
-    "points": [
-      {
-        "type": "klinik",
-        "label": "Associerat",
-        "text": "Irit, aortit och IBD nämns som kopplingar."
-      },
-      {
-        "type": "diagnos",
-        "label": "Sakroiliit",
-        "text": "Ankyloserande spondylit kopplas till sakroiliit."
-      },
-      {
-        "type": "diagnos",
-        "label": "Schober",
-        "text": "Schobers test används för ländryggsrörlighet."
-      },
-      {
-        "type": "behandling",
-        "label": "Förstahand",
-        "text": "NSAID nämns som behandling."
-      }
-    ]
-  },
-  {
-    "id": "psoriasisartrit",
-    "category": "reuma",
-    "title": "Psoriasisartrit",
-    "summary": "Entesit, daktylit och asymmetrisk oligoartrit är viktiga ledtrådar.",
-    "tags": [
-      "psoriasisartrit",
-      "entesit",
-      "daktylit",
-      "DIP"
-    ],
-    "points": [
-      {
-        "type": "klinik",
-        "label": "Mönster",
-        "text": "Entesit, daktylit och asymmetrisk oligoartrit anges."
-      },
-      {
-        "type": "klinik",
-        "label": "DIP",
-        "text": "DIP-engagemang passar bättre med psoriasisartrit än klassisk RA."
-      },
-      {
-        "type": "diagnos",
-        "label": "Röntgen",
-        "text": "Benpålagring/nybildning kan ses, ofta efter inflammation/trauma."
-      }
-    ]
-  },
-  {
-    "id": "myosit",
-    "category": "reuma",
-    "title": "Myosit",
-    "summary": "Proximal muskelsvaghet, uttröttbarhet och koppling till autoantikroppar/lungfibros.",
-    "tags": [
-      "myosit",
-      "Jo-1",
-      "dermatomyosit",
-      "lungfibros"
-    ],
-    "points": [
-      {
-        "type": "klinik",
-        "label": "Svaghet",
-        "text": "Proximal svaghet och ökad uttröttbarhet nämns."
-      },
-      {
-        "type": "diagnos",
-        "label": "Utredning",
-        "text": "Biopsi, MR och autoantikroppar kan ingå."
-      },
-      {
-        "type": "diagnos",
-        "label": "Jo-1",
-        "text": "Jo-1 kopplas till lungfibros/antisyntetassyndrom."
-      },
-      {
-        "type": "varning",
-        "label": "Dermatomyosit",
-        "text": "Malignitetsutredning anges i anteckningen."
-      }
-    ]
-  },
-  {
-    "id": "pmr-gca",
-    "category": "reuma",
-    "title": "PMR och GCA",
-    "summary": "Polymyalgia rheumatica och temporalisarterit förekommer ofta i samma kliniska sammanhang.",
-    "tags": [
-      "PMR",
-      "GCA",
-      "temporalisarterit",
-      "SR",
-      "prednisolon"
-    ],
-    "points": [
-      {
-        "type": "klinik",
-        "label": "PMR",
-        "text": "Stelhet och värk i axlar/höfter; SR/CRP ofta tydligt förhöjt."
-      },
-      {
-        "type": "komihag",
-        "label": "Samband",
-        "text": "PMR har samtidighet/koppling med GCA."
-      },
-      {
-        "type": "klinik",
-        "label": "GCA",
-        "text": "Öm hårbotten, tuggsmärta, synsymtom eller synrubbning är viktiga varningssymtom."
-      },
-      {
-        "type": "diagnos",
-        "label": "Utredning",
-        "text": "Ultraljud/bilddiagnostik och biopsi nämns."
-      },
-      {
-        "type": "varning",
-        "label": "Synhot",
-        "text": "Vid stark misstanke behandla med prednisolon direkt efter misstanke/provtagning enligt lokal rutin."
-      }
-    ]
-  },
-  {
-    "id": "gpa",
-    "category": "reuma",
-    "title": "GPA – granulomatös polyangit",
-    "summary": "Systemisk vaskulit med luftvägar, njurar och allmänsymtom.",
-    "tags": [
-      "GPA",
-      "ANCA",
-      "PR3",
-      "njure",
-      "ÖNH"
-    ],
-    "points": [
-      {
-        "type": "klinik",
-        "label": "Organ",
-        "text": "Lunga, ÖNH och njure anges som centrala organ."
-      },
-      {
-        "type": "lab",
-        "label": "Serologi",
-        "text": "PR3-ANCA anges som typisk markör."
-      },
-      {
-        "type": "behandling",
-        "label": "Induktion",
-        "text": "Prednisolon tillsammans med cyklofosfamid eller rituximab nämns; MTX kan vara underhåll i mildare/lokal sjukdom."
-      }
-    ]
-  },
-  {
-    "id": "aps",
-    "category": "reuma",
-    "title": "Antifosfolipidsyndrom",
-    "summary": "Trombos- och graviditetskomplikationer.",
-    "tags": [
-      "APS",
-      "trombos",
-      "missfall"
-    ],
-    "points": [
-      {
-        "type": "klinik",
-        "label": "Risk",
-        "text": "Ökad risk för lungemboli/trombos anges."
-      },
-      {
-        "type": "klinik",
-        "label": "Graviditet",
-        "text": "Upprepade missfall anges som klassisk ledtråd."
-      }
-    ]
-  },
-  {
-    "id": "sle-nefrit",
-    "category": "reuma",
-    "title": "SLE-nefrit",
-    "summary": "Njurinvolvering vid SLE med komplementkonsumtion och urinfynd.",
-    "tags": [
-      "SLE",
-      "nefrit",
-      "C3",
-      "C4",
-      "anti-dsDNA"
-    ],
-    "points": [
-      {
-        "type": "lab",
-        "label": "Komplement",
-        "text": "Lågt C3/C4 anges."
-      },
-      {
-        "type": "diagnos",
-        "label": "Urin",
-        "text": "Proteinuri och hematuri; följ U-sticka och U-sediment."
-      },
-      {
-        "type": "lab",
-        "label": "Serologi",
-        "text": "Anti-dsDNA och komplement följs vid aktivitet."
-      },
-      {
-        "type": "diagnos",
-        "label": "Biopsi",
-        "text": "Njurbiospi klassificerar nefrit och styr behandling."
-      }
-    ]
-  },
-  {
-    "id": "systemisk-skleros",
-    "category": "reuma",
-    "title": "Systemisk skleros",
-    "summary": "Fibros, vaskulopati och autoimmunitet.",
-    "tags": [
-      "systemisk skleros",
-      "Raynaud",
-      "Scl-70",
-      "centromer",
-      "ILD"
-    ],
-    "points": [
-      {
-        "type": "klinik",
-        "label": "Triad",
-        "text": "Fibros, vaskulopati och immunologisk påverkan anges."
-      },
-      {
-        "type": "lab",
-        "label": "Antikroppar",
-        "text": "Scl-70 kopplas till diffus form; anticentromer till begränsad form."
-      },
-      {
-        "type": "klinik",
-        "label": "Manifestationer",
-        "text": "Raynaud, sklerodermi, interstitiell lungsjukdom och pulmonell hypertension nämns."
-      }
-    ]
-  },
-  {
-    "id": "sjogren",
-    "category": "reuma",
-    "title": "Sjögrens syndrom",
-    "summary": "Sicca-symtom och autoantikroppar.",
-    "tags": [
-      "Sjögren",
-      "SSA",
-      "SSB",
-      "Schirmer"
-    ],
-    "points": [
-      {
-        "type": "lab",
-        "label": "Antikroppar",
-        "text": "Anti-SSA och anti-SSB anges."
-      },
-      {
-        "type": "varning",
-        "label": "Graviditet",
-        "text": "SSA/SSB kan kopplas till AV-block hos foster."
-      },
-      {
-        "type": "diagnos",
-        "label": "Schirmer",
-        "text": "Tårmängdstest/Schirmers test nämns."
-      },
-      {
-        "type": "behandling",
-        "label": "Symtom",
-        "text": "Ögon- och munbehandling, till exempel tårsubstitut; NSAID vid värk efter behov."
-      }
-    ]
-  },
-  {
-    "id": "hyponatremi-snabb-korrigering",
-    "category": "njure",
-    "title": "Hyponatremi och korrigering",
-    "summary": "Risk skiljer sig mellan akut och kronisk hyponatremi.",
-    "tags": [
-      "hyponatremi",
-      "SIADH",
-      "osmotisk demyelinisering",
-      "hjärnödem"
-    ],
-    "points": [
-      {
-        "type": "varning",
-        "label": "Akut",
-        "text": "Akut hyponatremi kan ge risk för hjärnödem."
-      },
-      {
-        "type": "varning",
-        "label": "Kronisk",
-        "text": "För snabb korrigering av kronisk hyponatremi ger risk för osmotiskt demyeliniseringssyndrom."
-      },
-      {
-        "type": "diagnos",
-        "label": "Orsak",
-        "text": "Diuretika och SIADH nämns som vanliga orsaker."
-      },
-      {
-        "type": "behandling",
-        "label": "Korrigering",
-        "text": "Korrigera långsamt; anteckningen anger max cirka 0,4 mmol/L/timme."
-      },
-      {
-        "type": "behandling",
-        "label": "Akut svår",
-        "text": "Vid kramper/medvetandepåverkan: hyperton NaCl enligt akut rutin."
-      },
-      {
-        "type": "lab",
-        "label": "Falskt lågt Na",
-        "text": "Natrium kan bli falskt/lågt vid hyperglykemi."
-      }
-    ]
-  },
-  {
-    "id": "hemolys",
-    "category": "hematologi",
-    "title": "Hemolysprover",
-    "summary": "Klassisk labbtriad i anteckningen.",
-    "tags": [
-      "hemolys",
-      "LD",
-      "bilirubin",
-      "haptoglobin"
-    ],
-    "points": [
-      {
-        "type": "lab",
-        "label": "LD",
-        "text": "LD stiger."
-      },
-      {
-        "type": "lab",
-        "label": "Bilirubin",
-        "text": "Bilirubin stiger."
-      },
-      {
-        "type": "lab",
-        "label": "Haptoglobin",
-        "text": "Haptoglobin sjunker."
-      }
-    ]
-  },
-  {
-    "id": "synkope",
-    "category": "kardio",
-    "title": "Synkope – tre huvudspår",
-    "summary": "Reflex/vasovagal, ortostatisk och kardiell synkope separeras med anamnes och status.",
-    "tags": [
-      "synkope",
-      "ortostatism",
-      "vasovagal",
-      "kardiell"
-    ],
-    "points": [
-      {
-        "type": "klinik",
-        "label": "Reflex/vasovagal",
-        "text": "Utlöses av exempelvis långvarigt stående/sittande, värme eller emotionell stress. Prodromer: illamående, svartnar för ögonen, yrsel/svimningskänsla."
-      },
-      {
-        "type": "klinik",
-        "label": "Ortostatisk",
-        "text": "Autonom dysfunktion, läkemedel eller dehydrering; BT-fall >20 mmHg anges som patologiskt."
-      },
-      {
-        "type": "varning",
-        "label": "Kardiell",
-        "text": "Ingen prodrom, ansträngnings-/positionsrelation, klaffsjukdom eller blåsljud talar för kardiell genes."
-      },
-      {
-        "type": "diagnos",
-        "label": "Anamnes",
-        "text": "Fråga: vad hände innan, duration, position, tidigare episoder, tungbett och kardiovaskulär sjukdom."
-      }
-    ]
-  },
-  {
-    "id": "dka-hhs",
-    "category": "endokrin",
-    "title": "DKA och HHS",
-    "summary": "Akuta hyperglykemiska tillstånd med vätska, insulin och elektrolytkontroll.",
-    "tags": [
-      "DKA",
-      "HHS",
-      "insulin",
-      "kalium"
-    ],
-    "points": [
-      {
-        "type": "diagnos",
-        "label": "DKA",
-        "text": "Diabetesketoacidos kopplas till ketoner/acidos och ofta DM1."
-      },
-      {
-        "type": "diagnos",
-        "label": "HHS",
-        "text": "Hyperosmolärt hyperglykemiskt syndrom med uttalad dehydrering/hyperglykemi."
-      },
-      {
-        "type": "behandling",
-        "label": "Vätska",
-        "text": "Anteckningen anger snabb initial vätskebehandling, exempelvis 1 L första timmen och därefter fortsatt vätska."
-      },
-      {
-        "type": "behandling",
-        "label": "Insulin",
-        "text": "Insulininfusion anges i anteckningen; följ lokalt DKA/HHS-schema."
-      },
-      {
-        "type": "varning",
-        "label": "Kalium",
-        "text": "Följ kalium noggrant; insulin kan sänka kalium."
-      }
-    ]
-  },
-  {
-    "id": "dvt-wells-antikoagulantia",
-    "category": "kardio",
-    "title": "DVT – Wells och antikoagulantia",
-    "summary": "Riskpoäng och val av antikoagulantia vid särskilda tillstånd.",
-    "tags": [
-      "DVT",
-      "Wells",
-      "Fragmin",
-      "Eliquis",
-      "graviditet"
-    ],
-    "points": [
-      {
-        "type": "diagnos",
-        "label": "Wells",
-        "text": "Wells score <2 poäng nämns som låg sannolikhetsspår."
-      },
-      {
-        "type": "behandling",
-        "label": "Njursvikt",
-        "text": "Vid njursvikt anges Fragmin som bättre alternativ än Eliquis."
-      },
-      {
-        "type": "behandling",
-        "label": "Graviditet",
-        "text": "Fragmin anges även som alternativ vid graviditet."
-      }
-    ]
-  },
-  {
-    "id": "ischemisk-ekg-troponin",
-    "category": "kardio",
-    "title": "Ischemi, EKG och troponin",
-    "summary": "Snabbspår för bröstsmärta enligt anteckningarna.",
-    "tags": [
-      "troponin",
-      "STEMI",
-      "NSTEMI",
-      "EKG",
-      "HEART"
-    ],
-    "points": [
-      {
-        "type": "diagnos",
-        "label": "Posterior ischemi",
-        "text": "ST-sänkning V2–V4 anges som tecken som kan tala för posterior påverkan."
-      },
-      {
-        "type": "diagnos",
-        "label": "TnT >14",
-        "text": "Ta om troponin efter cirka 3 timmar."
-      },
-      {
-        "type": "diagnos",
-        "label": "TnT 5–14",
-        "text": "Ta om troponin efter cirka 1 timme; deltaförändring och HEART-score vägs in."
-      },
-      {
-        "type": "diagnos",
-        "label": "TnT <5",
-        "text": "Låg risk i anteckningen; kan skickas hem om klinik/EKG stödjer det."
-      },
-      {
-        "type": "diagnos",
-        "label": "STEMI",
-        "text": "ST-höjning markerar STEMI-spår."
-      },
-      {
-        "type": "behandling",
-        "label": "NSTEMI",
-        "text": "DAPT/OAPT och fondaparinux anges."
-      }
-    ]
-  },
-  {
-    "id": "dapt-asa-p2y12",
-    "category": "kardio",
-    "title": "Trombocythämning efter ACS",
-    "summary": "ASA + P2Y12-hämmare och duration enligt blödningsrisk.",
-    "tags": [
-      "ASA",
-      "ticagrelor",
-      "klopidogrel",
-      "DAPT",
-      "trombyl"
-    ],
-    "points": [
-      {
-        "type": "behandling",
-        "label": "DAPT",
-        "text": "ASA + ticagrelor eller klopidogrel."
-      },
-      {
-        "type": "behandling",
-        "label": "Duration",
-        "text": "DAPT 12 månader anges; kortare duration vid hög blödningsrisk enligt individuell bedömning."
-      }
-    ]
-  },
-  {
-    "id": "av-block-arytmi",
-    "category": "kardio",
-    "title": "AV-block, VT och takykardi",
-    "summary": "Rytmtolkning och akut behandling i anteckningen.",
-    "tags": [
-      "AV-block",
-      "VT",
-      "amiodaron",
-      "AVNRT",
-      "EKG"
-    ],
-    "points": [
-      {
-        "type": "diagnos",
-        "label": "AV-block 2:1",
-        "text": "Varannan P-våg överleds; QRS-bredd och PQ-mönster hjälper lokalisation/riskbedömning."
-      },
-      {
-        "type": "komihag",
-        "label": "Papperhastighet",
-        "text": "Vid 50 mm/s motsvarar 10 mm cirka 0,1 s; vid 25 mm/s motsvarar 10 mm cirka 0,2 s."
-      },
-      {
-        "type": "behandling",
-        "label": "VT stabil",
-        "text": "Amiodaron anges vid cirkulatoriskt stabil VT."
-      },
-      {
-        "type": "behandling",
-        "label": "VT instabil",
-        "text": "Elkonvertering vid cirkulatorisk påverkan."
-      },
-      {
-        "type": "diagnos",
-        "label": "AVNRT",
-        "text": "Regelbunden smal takykardi utan tydliga P-vågor kan tala för AVNRT."
-      }
-    ]
-  },
-  {
-    "id": "icd-crt",
-    "category": "kardio",
-    "title": "ICD och CRT-D",
-    "summary": "Hjärtsvikt/arytmirisk och breddökade QRS-komplex.",
-    "tags": [
-      "ICD",
-      "CRT-D",
-      "EF",
-      "LBBB",
-      "QRS"
-    ],
-    "points": [
-      {
-        "type": "behandling",
-        "label": "ICD",
-        "text": "Övervägs vid hög risk för plötslig död, till exempel VT med cirkulatorisk påverkan eller EF ≤35 %."
-      },
-      {
-        "type": "behandling",
-        "label": "CRT-D",
-        "text": "EF ≤35 % + skänkelblock/bred QRS, särskilt LBBB och QRS >130 ms, anges."
-      },
-      {
-        "type": "behandling",
-        "label": "Pacemakerbehov",
-        "text": "Pacemakerbehov tillsammans med EF <40 % nämns som CRT-spår."
-      }
-    ]
-  },
-  {
-    "id": "hjartsvikt-digoxin-raas",
-    "category": "kardio",
-    "title": "Hjärtsvikt – reducerad EF",
-    "summary": "Symtom, EF och läkemedelsspår.",
-    "tags": [
-      "hjärtsvikt",
-      "EF",
-      "digoxin",
-      "RAAS"
-    ],
-    "points": [
-      {
-        "type": "klinik",
-        "label": "Svullnad + låg EF",
-        "text": "Svullnad/ödem och reducerad EF nämns i hjärtsviktsdelen."
-      },
-      {
-        "type": "behandling",
-        "label": "Digoxin",
-        "text": "Digoxin nämns som behandlingsalternativ i anteckningen."
-      },
-      {
-        "type": "behandling",
-        "label": "RAAS-i",
-        "text": "RAAS-hämning behöver titreras/följas med njurfunktion, blodtryck och kalium."
-      }
-    ]
-  },
-  {
-    "id": "pleuravatska-light",
-    "category": "lungor",
-    "title": "Pleuravätska – transudat/exsudat",
-    "summary": "Light's kriterier och grundläggande vätskekaraktärisering.",
-    "tags": [
-      "pleuravätska",
-      "transudat",
-      "exsudat",
-      "Light"
-    ],
-    "points": [
-      {
-        "type": "diagnos",
-        "label": "Transudat",
-        "text": "Lågt protein, albumin och LD nämns."
-      },
-      {
-        "type": "diagnos",
-        "label": "Exsudat",
-        "text": "Light's kriterier används för att skilja exsudat från transudat."
-      },
-      {
-        "type": "lab",
-        "label": "pH",
-        "text": "Lågt pH i pleuravätska kan tala för komplicerad genes; anteckningen nämner pH <7,2 i exsudatspår."
-      }
-    ]
-  },
-  {
-    "id": "spirometri-obstruktivitet",
-    "category": "lungor",
-    "title": "Spirometri – obstruktivitet",
-    "summary": "FEV1/FVC som nyckeltal.",
-    "tags": [
-      "spirometri",
-      "FEV1",
-      "FVC",
-      "obstruktivitet"
-    ],
-    "points": [
-      {
-        "type": "diagnos",
-        "label": "FEV1/FVC",
-        "text": "FEV1/FVC <0,7 anges som obstruktivitet."
-      }
-    ]
-  },
-  {
-    "id": "obesitas-hypoventilation",
-    "category": "lungor",
-    "title": "Obesitas-hypoventilationssyndrom",
-    "summary": "BMI, dagtidskoldioxid och nattliga besvär.",
-    "tags": [
-      "obesitas",
-      "hypoventilation",
-      "CPAP",
-      "CO2"
-    ],
-    "points": [
-      {
-        "type": "klinik",
-        "label": "Definition",
-        "text": "Patient med BMI >30 och hypoventilation/dagtidskoldioxidretention."
-      },
-      {
-        "type": "klinik",
-        "label": "Symtom",
-        "text": "Andfåddhet och nattliga besvär anges."
-      },
-      {
-        "type": "behandling",
-        "label": "CPAP",
-        "text": "CPAP anges som behandling i anteckningen."
-      }
-    ]
-  }
+	{
+		"id": "kol-exacerbation",
+		"category": "lungor",
+		"title": "KOL-exacerbation",
+		"summary": "Akut försämring med bronkdilaterare, antibiotika vid misstänkt bakteriell genes och kort steroidkur.",
+		"tags": ["KOL", "prednisolon", "antibiotika"],
+		"points": [
+			{
+				"type": "behandling",
+				"label": "Bronkdilaterare",
+				"text": "Combivent eller motsvarande inhalationsbehandling vid exacerbation."
+			},
+			{
+				"type": "behandling",
+				"label": "Antibiotika",
+				"text": "Amoxicillin eller doxycyklin vid misstänkt bakteriell exacerbation."
+			},
+			{
+				"type": "behandling",
+				"label": "Steroid",
+				"text": "Prednisolon i cirka 5 dygn."
+			}
+		]
+	},
+	{
+		"id": "pneumoni-immunsuppression",
+		"category": "infektion",
+		"title": "Pneumoni hos immunsupprimerad",
+		"summary": "Tänk bredare etiologi och använd riktad diagnostik vid oklar bild.",
+		"tags": ["pneumoni", "immunsuppression", "BAL", "ground glass"],
+		"points": [
+			{
+				"type": "diagnos",
+				"label": "Radiologi",
+				"text": "Ground-glass-förändringar i anteckningen kopplas till behov av vidare utredning."
+			},
+			{
+				"type": "diagnos",
+				"label": "BAL",
+				"text": "BAL anges som diagnostisk metod vid svårtolkad eller opportunistisk pneumoni."
+			},
+			{
+				"type": "komihag",
+				"label": "Immunsuppression",
+				"text": "Låg tröskel för atypiska/opportunistiska agens och riktad provtagning."
+			}
+		]
+	},
+	{
+		"id": "kikhosta",
+		"category": "infektion",
+		"title": "Kikhosta",
+		"summary": "Anmälnings-/spårningsrelevant infektion enligt anteckningen.",
+		"tags": ["kikhosta", "smittspårning"],
+		"points": [
+			{
+				"type": "diagnos",
+				"label": "Provtagning",
+				"text": "Laboratorieverifiering styr fortsatt handläggning."
+			},
+			{
+				"type": "varning",
+				"label": "Smittspårning",
+				"text": "Anteckningen markerar smittspårning vid laboratoriebekräftad kikhosta."
+			}
+		]
+	},
+	{
+		"id": "nefritiskt-nefrotiskt",
+		"category": "njure",
+		"title": "Nefritiskt vs nefrotiskt syndrom",
+		"summary": "Två olika njurmönster: inflammatoriskt glomerulärt syndrom respektive kraftig proteinuri.",
+		"tags": ["nefrit", "nefros", "proteinuri", "hematuri"],
+		"points": [
+			{
+				"type": "klinik",
+				"label": "Nefritiskt",
+				"text": "Glomerulär inflammation med hematuri och nedsatt njurfunktion som huvudspår."
+			},
+			{
+				"type": "klinik",
+				"label": "Nefrotiskt",
+				"text": "Kraftig proteinuri, hypoalbuminemi och ödem som huvudspår."
+			},
+			{
+				"type": "komihag",
+				"label": "Minimal change",
+				"text": "Minimal change-nefropati nämns som klassiskt hos barn."
+			}
+		]
+	},
+	{
+		"id": "iga-anca-vaskulit",
+		"category": "njure",
+		"title": "IgA-nefrit, IgA-vaskulit och ANCA-vaskulit",
+		"summary": "Njure + vaskulitmönster i anteckningarna.",
+		"tags": ["IgA", "ANCA", "GPA", "MPA", "purpura"],
+		"points": [
+			{
+				"type": "diagnos",
+				"label": "IgA-nefrit",
+				"text": "Vanlig glomerulonefrit; tänk hematuri/proteinuri beroende på bild."
+			},
+			{
+				"type": "diagnos",
+				"label": "ANCA",
+				"text": "GPA och MPA kopplas till ANCA-vaskulit i anteckningen."
+			},
+			{
+				"type": "klinik",
+				"label": "IgA-vaskulit",
+				"text": "Purpura och påverkan från flera organsystem nämns som ledtråd."
+			}
+		]
+	},
+	{
+		"id": "sekundar-hyperpara-ckd",
+		"category": "njure",
+		"title": "Sekundär hyperparatyreoidism vid CKD",
+		"summary": "Rubbat kalk-fosfat-PTH-system vid kronisk njursvikt.",
+		"tags": ["CKD", "PTH", "fosfat", "kalcium"],
+		"points": [
+			{
+				"type": "lab",
+				"label": "Fosfat",
+				"text": "Fosfat stiger vid CKD."
+			},
+			{
+				"type": "lab",
+				"label": "PTH",
+				"text": "PTH stiger sekundärt."
+			},
+			{
+				"type": "lab",
+				"label": "Kalcium",
+				"text": "Kalcium är ofta normalt eller lågt."
+			}
+		]
+	},
+	{
+		"id": "raas-ace-sglt2-aki",
+		"category": "njure",
+		"title": "RAAS-hämmare, ACE-i och SGLT2 vid njurrisk",
+		"summary": "Kontroller och tillfällig paus vid dehydrering/AKI-risk.",
+		"tags": ["RAAS", "ACE", "SGLT2", "AKI", "metformin"],
+		"points": [
+			{
+				"type": "lab",
+				"label": "Vid ACE-i",
+				"text": "Följ blodtryck och njurprover/elektrolyter efter insättning eller dosändring."
+			},
+			{
+				"type": "behandling",
+				"label": "SGLT2",
+				"text": "SGLT2-hämmare nämns i njurskyddande sammanhang."
+			},
+			{
+				"type": "varning",
+				"label": "Dehydrering",
+				"text": "Vid dehydrering/gastroenterit: överväg paus av RAAS-hämmare, SGLT2-hämmare och metformin för att minska AKI-risk."
+			}
+		]
+	},
+	{
+		"id": "interstitiell-nefrit",
+		"category": "njure",
+		"title": "Interstitiell nefrit",
+		"summary": "Tubulointerstitiell inflammation med typiska urinfynd.",
+		"tags": ["interstitiell nefrit", "pyuri", "proteinuri"],
+		"points": [
+			{
+				"type": "diagnos",
+				"label": "Urin",
+				"text": "Steril pyuri anges som ledtråd."
+			},
+			{
+				"type": "diagnos",
+				"label": "Proteinuri",
+				"text": "Tubulär proteinuri med små proteiner anges i anteckningen."
+			}
+		]
+	},
+	{
+		"id": "gikt",
+		"category": "reuma",
+		"title": "Gikt",
+		"summary": "Akut artrit med klassisk stortåled, alkohol/obesitas och nattliga besvär.",
+		"tags": ["gikt", "urat", "ledvätska", "NSAID"],
+		"points": [
+			{
+				"type": "klinik",
+				"label": "Typiskt",
+				"text": "Akut smärtsam artrit, ofta första MTP-leden/stortåleden och ofta nattliga besvär."
+			},
+			{
+				"type": "klinik",
+				"label": "Risk",
+				"text": "Alkohol och obesitas nämns som riskfaktorer."
+			},
+			{
+				"type": "diagnos",
+				"label": "Ledvätska",
+				"text": "Ledvätskeanalys används för kristallpåvisning vid oklar diagnos."
+			},
+			{
+				"type": "behandling",
+				"label": "Akut",
+				"text": "NSAID nämns som akut behandling om inga kontraindikationer finns."
+			},
+			{
+				"type": "behandling",
+				"label": "Uratmål",
+				"text": "Allopurinol för uratsänkning; målvärde urat <360 µmol/L anges."
+			}
+		]
+	},
+	{
+		"id": "ra",
+		"category": "reuma",
+		"title": "Reumatoid artrit",
+		"summary": "Inflammatorisk polyartrit med RF/anti-CCP, ledstatus och tidig DMARD-behandling.",
+		"tags": ["RA", "RF", "anti-CCP", "DMARD", "MTX"],
+		"points": [
+			{
+				"type": "diagnos",
+				"label": "Serologi",
+				"text": "RF och anti-CCP används i diagnostiken; anti-CCP är särskilt specifikt."
+			},
+			{
+				"type": "klinik",
+				"label": "Ledstatus",
+				"text": "Notera ömhet, svullnad, värme, duration och funktionspåverkan."
+			},
+			{
+				"type": "diagnos",
+				"label": "Aktivitet",
+				"text": "Sjukdomsaktivitet bedöms med allmänsymtom, antal svullna/ömma leder, CRP/SR och röntgenfynd."
+			},
+			{
+				"type": "behandling",
+				"label": "DMARD",
+				"text": "Alla med RA ska ha DMARD vid diagnos enligt anteckningen."
+			},
+			{
+				"type": "behandling",
+				"label": "Steg",
+				"text": "MTX + prednisolon som brygga; därefter biologiskt läkemedel/TNF-hämmare eller JAK-hämmare vid behov."
+			}
+		]
+	},
+	{
+		"id": "spondylartrit",
+		"category": "reuma",
+		"title": "Spondylartrit / ankyloserande spondylit",
+		"summary": "Axial inflammatorisk sjukdom med sakroiliit och extraartikulära manifestationer.",
+		"tags": ["spondylartrit", "sakroiliit", "irit", "IBD", "NSAID"],
+		"points": [
+			{
+				"type": "klinik",
+				"label": "Associerat",
+				"text": "Irit, aortit och IBD nämns som kopplingar."
+			},
+			{
+				"type": "diagnos",
+				"label": "Sakroiliit",
+				"text": "Ankyloserande spondylit kopplas till sakroiliit."
+			},
+			{
+				"type": "diagnos",
+				"label": "Schober",
+				"text": "Schobers test används för ländryggsrörlighet."
+			},
+			{
+				"type": "behandling",
+				"label": "Förstahand",
+				"text": "NSAID nämns som behandling."
+			}
+		]
+	},
+	{
+		"id": "psoriasisartrit",
+		"category": "reuma",
+		"title": "Psoriasisartrit",
+		"summary": "Entesit, daktylit och asymmetrisk oligoartrit är viktiga ledtrådar.",
+		"tags": ["psoriasisartrit", "entesit", "daktylit", "DIP"],
+		"points": [
+			{
+				"type": "klinik",
+				"label": "Mönster",
+				"text": "Entesit, daktylit och asymmetrisk oligoartrit anges."
+			},
+			{
+				"type": "klinik",
+				"label": "DIP",
+				"text": "DIP-engagemang passar bättre med psoriasisartrit än klassisk RA."
+			},
+			{
+				"type": "diagnos",
+				"label": "Röntgen",
+				"text": "Benpålagring/nybildning kan ses, ofta efter inflammation/trauma."
+			}
+		]
+	},
+	{
+		"id": "myosit",
+		"category": "reuma",
+		"title": "Myosit",
+		"summary": "Proximal muskelsvaghet, uttröttbarhet och koppling till autoantikroppar/lungfibros.",
+		"tags": ["myosit", "Jo-1", "dermatomyosit", "lungfibros"],
+		"points": [
+			{
+				"type": "klinik",
+				"label": "Svaghet",
+				"text": "Proximal svaghet och ökad uttröttbarhet nämns."
+			},
+			{
+				"type": "diagnos",
+				"label": "Utredning",
+				"text": "Biopsi, MR och autoantikroppar kan ingå."
+			},
+			{
+				"type": "diagnos",
+				"label": "Jo-1",
+				"text": "Jo-1 kopplas till lungfibros/antisyntetassyndrom."
+			},
+			{
+				"type": "varning",
+				"label": "Dermatomyosit",
+				"text": "Malignitetsutredning anges i anteckningen."
+			}
+		]
+	},
+	{
+		"id": "pmr-gca",
+		"category": "reuma",
+		"title": "PMR och GCA",
+		"summary": "Polymyalgia rheumatica och temporalisarterit förekommer ofta i samma kliniska sammanhang.",
+		"tags": ["PMR", "GCA", "temporalisarterit", "SR", "prednisolon"],
+		"points": [
+			{
+				"type": "klinik",
+				"label": "PMR",
+				"text": "Stelhet och värk i axlar/höfter; SR/CRP ofta tydligt förhöjt."
+			},
+			{
+				"type": "komihag",
+				"label": "Samband",
+				"text": "PMR har samtidighet/koppling med GCA."
+			},
+			{
+				"type": "klinik",
+				"label": "GCA",
+				"text": "Öm hårbotten, tuggsmärta, synsymtom eller synrubbning är viktiga varningssymtom."
+			},
+			{
+				"type": "diagnos",
+				"label": "Utredning",
+				"text": "Ultraljud/bilddiagnostik och biopsi nämns."
+			},
+			{
+				"type": "varning",
+				"label": "Synhot",
+				"text": "Vid stark misstanke behandla med prednisolon direkt efter misstanke/provtagning enligt lokal rutin."
+			}
+		]
+	},
+	{
+		"id": "gpa",
+		"category": "reuma",
+		"title": "GPA – granulomatös polyangit",
+		"summary": "Systemisk vaskulit med luftvägar, njurar och allmänsymtom.",
+		"tags": ["GPA", "ANCA", "PR3", "njure", "ÖNH"],
+		"points": [
+			{
+				"type": "klinik",
+				"label": "Organ",
+				"text": "Lunga, ÖNH och njure anges som centrala organ."
+			},
+			{
+				"type": "lab",
+				"label": "Serologi",
+				"text": "PR3-ANCA anges som typisk markör."
+			},
+			{
+				"type": "behandling",
+				"label": "Induktion",
+				"text": "Prednisolon tillsammans med cyklofosfamid eller rituximab nämns; MTX kan vara underhåll i mildare/lokal sjukdom."
+			}
+		]
+	},
+	{
+		"id": "aps",
+		"category": "reuma",
+		"title": "Antifosfolipidsyndrom",
+		"summary": "Trombos- och graviditetskomplikationer.",
+		"tags": ["APS", "trombos", "missfall"],
+		"points": [
+			{
+				"type": "klinik",
+				"label": "Risk",
+				"text": "Ökad risk för lungemboli/trombos anges."
+			},
+			{
+				"type": "klinik",
+				"label": "Graviditet",
+				"text": "Upprepade missfall anges som klassisk ledtråd."
+			}
+		]
+	},
+	{
+		"id": "sle-nefrit",
+		"category": "reuma",
+		"title": "SLE-nefrit",
+		"summary": "Njurinvolvering vid SLE med komplementkonsumtion och urinfynd.",
+		"tags": ["SLE", "nefrit", "C3", "C4", "anti-dsDNA"],
+		"points": [
+			{
+				"type": "lab",
+				"label": "Komplement",
+				"text": "Lågt C3/C4 anges."
+			},
+			{
+				"type": "diagnos",
+				"label": "Urin",
+				"text": "Proteinuri och hematuri; följ U-sticka och U-sediment."
+			},
+			{
+				"type": "lab",
+				"label": "Serologi",
+				"text": "Anti-dsDNA och komplement följs vid aktivitet."
+			},
+			{
+				"type": "diagnos",
+				"label": "Biopsi",
+				"text": "Njurbiospi klassificerar nefrit och styr behandling."
+			}
+		]
+	},
+	{
+		"id": "systemisk-skleros",
+		"category": "reuma",
+		"title": "Systemisk skleros",
+		"summary": "Fibros, vaskulopati och autoimmunitet.",
+		"tags": ["systemisk skleros", "Raynaud", "Scl-70", "centromer", "ILD"],
+		"points": [
+			{
+				"type": "klinik",
+				"label": "Triad",
+				"text": "Fibros, vaskulopati och immunologisk påverkan anges."
+			},
+			{
+				"type": "lab",
+				"label": "Antikroppar",
+				"text": "Scl-70 kopplas till diffus form; anticentromer till begränsad form."
+			},
+			{
+				"type": "klinik",
+				"label": "Manifestationer",
+				"text": "Raynaud, sklerodermi, interstitiell lungsjukdom och pulmonell hypertension nämns."
+			}
+		]
+	},
+	{
+		"id": "sjogren",
+		"category": "reuma",
+		"title": "Sjögrens syndrom",
+		"summary": "Sicca-symtom och autoantikroppar.",
+		"tags": ["Sjögren", "SSA", "SSB", "Schirmer"],
+		"points": [
+			{
+				"type": "lab",
+				"label": "Antikroppar",
+				"text": "Anti-SSA och anti-SSB anges."
+			},
+			{
+				"type": "varning",
+				"label": "Graviditet",
+				"text": "SSA/SSB kan kopplas till AV-block hos foster."
+			},
+			{
+				"type": "diagnos",
+				"label": "Schirmer",
+				"text": "Tårmängdstest/Schirmers test nämns."
+			},
+			{
+				"type": "behandling",
+				"label": "Symtom",
+				"text": "Ögon- och munbehandling, till exempel tårsubstitut; NSAID vid värk efter behov."
+			}
+		]
+	},
+	{
+		"id": "hyponatremi-snabb-korrigering",
+		"category": "njure",
+		"title": "Hyponatremi och korrigering",
+		"summary": "Risk skiljer sig mellan akut och kronisk hyponatremi.",
+		"tags": ["hyponatremi", "SIADH", "osmotisk demyelinisering", "hjärnödem"],
+		"points": [
+			{
+				"type": "varning",
+				"label": "Akut",
+				"text": "Akut hyponatremi kan ge risk för hjärnödem."
+			},
+			{
+				"type": "varning",
+				"label": "Kronisk",
+				"text": "För snabb korrigering av kronisk hyponatremi ger risk för osmotiskt demyeliniseringssyndrom."
+			},
+			{
+				"type": "diagnos",
+				"label": "Orsak",
+				"text": "Diuretika och SIADH nämns som vanliga orsaker."
+			},
+			{
+				"type": "behandling",
+				"label": "Korrigering",
+				"text": "Korrigera långsamt; anteckningen anger max cirka 0,4 mmol/L/timme."
+			},
+			{
+				"type": "behandling",
+				"label": "Akut svår",
+				"text": "Vid kramper/medvetandepåverkan: hyperton NaCl enligt akut rutin."
+			},
+			{
+				"type": "lab",
+				"label": "Falskt lågt Na",
+				"text": "Natrium kan bli falskt/lågt vid hyperglykemi."
+			}
+		]
+	},
+	{
+		"id": "hemolys",
+		"category": "hematologi",
+		"title": "Hemolysprover",
+		"summary": "Klassisk labbtriad i anteckningen.",
+		"tags": ["hemolys", "LD", "bilirubin", "haptoglobin"],
+		"points": [
+			{
+				"type": "lab",
+				"label": "LD",
+				"text": "LD stiger."
+			},
+			{
+				"type": "lab",
+				"label": "Bilirubin",
+				"text": "Bilirubin stiger."
+			},
+			{
+				"type": "lab",
+				"label": "Haptoglobin",
+				"text": "Haptoglobin sjunker."
+			}
+		]
+	},
+	{
+		"id": "synkope",
+		"category": "kardio",
+		"title": "Synkope – tre huvudspår",
+		"summary": "Reflex/vasovagal, ortostatisk och kardiell synkope separeras med anamnes och status.",
+		"tags": ["synkope", "ortostatism", "vasovagal", "kardiell"],
+		"points": [
+			{
+				"type": "klinik",
+				"label": "Reflex/vasovagal",
+				"text": "Utlöses av exempelvis långvarigt stående/sittande, värme eller emotionell stress. Prodromer: illamående, svartnar för ögonen, yrsel/svimningskänsla."
+			},
+			{
+				"type": "klinik",
+				"label": "Ortostatisk",
+				"text": "Autonom dysfunktion, läkemedel eller dehydrering; BT-fall >20 mmHg anges som patologiskt."
+			},
+			{
+				"type": "varning",
+				"label": "Kardiell",
+				"text": "Ingen prodrom, ansträngnings-/positionsrelation, klaffsjukdom eller blåsljud talar för kardiell genes."
+			},
+			{
+				"type": "diagnos",
+				"label": "Anamnes",
+				"text": "Fråga: vad hände innan, duration, position, tidigare episoder, tungbett och kardiovaskulär sjukdom."
+			}
+		]
+	},
+	{
+		"id": "dka-hhs",
+		"category": "endokrin",
+		"title": "DKA och HHS",
+		"summary": "Akuta hyperglykemiska tillstånd med vätska, insulin och elektrolytkontroll.",
+		"tags": ["DKA", "HHS", "insulin", "kalium"],
+		"points": [
+			{
+				"type": "diagnos",
+				"label": "DKA",
+				"text": "Diabetesketoacidos kopplas till ketoner/acidos och ofta DM1."
+			},
+			{
+				"type": "diagnos",
+				"label": "HHS",
+				"text": "Hyperosmolärt hyperglykemiskt syndrom med uttalad dehydrering/hyperglykemi."
+			},
+			{
+				"type": "behandling",
+				"label": "Vätska",
+				"text": "Anteckningen anger snabb initial vätskebehandling, exempelvis 1 L första timmen och därefter fortsatt vätska."
+			},
+			{
+				"type": "behandling",
+				"label": "Insulin",
+				"text": "Insulininfusion anges i anteckningen; följ lokalt DKA/HHS-schema."
+			},
+			{
+				"type": "varning",
+				"label": "Kalium",
+				"text": "Följ kalium noggrant; insulin kan sänka kalium."
+			}
+		]
+	},
+	{
+		"id": "dvt-wells-antikoagulantia",
+		"category": "kardio",
+		"title": "DVT – Wells och antikoagulantia",
+		"summary": "Riskpoäng och val av antikoagulantia vid särskilda tillstånd.",
+		"tags": ["DVT", "Wells", "Fragmin", "Eliquis", "graviditet"],
+		"points": [
+			{
+				"type": "diagnos",
+				"label": "Wells",
+				"text": "Wells score <2 poäng nämns som låg sannolikhetsspår."
+			},
+			{
+				"type": "behandling",
+				"label": "Njursvikt",
+				"text": "Vid njursvikt anges Fragmin som bättre alternativ än Eliquis."
+			},
+			{
+				"type": "behandling",
+				"label": "Graviditet",
+				"text": "Fragmin anges även som alternativ vid graviditet."
+			}
+		]
+	},
+	{
+		"id": "ischemisk-ekg-troponin",
+		"category": "kardio",
+		"title": "Ischemi, EKG och troponin",
+		"summary": "Snabbspår för bröstsmärta enligt anteckningarna.",
+		"tags": ["troponin", "STEMI", "NSTEMI", "EKG", "HEART"],
+		"points": [
+			{
+				"type": "diagnos",
+				"label": "Posterior ischemi",
+				"text": "ST-sänkning V2–V4 anges som tecken som kan tala för posterior påverkan."
+			},
+			{
+				"type": "diagnos",
+				"label": "TnT >14",
+				"text": "Ta om troponin efter cirka 3 timmar."
+			},
+			{
+				"type": "diagnos",
+				"label": "TnT 5–14",
+				"text": "Ta om troponin efter cirka 1 timme; deltaförändring och HEART-score vägs in."
+			},
+			{
+				"type": "diagnos",
+				"label": "TnT <5",
+				"text": "Låg risk i anteckningen; kan skickas hem om klinik/EKG stödjer det."
+			},
+			{
+				"type": "diagnos",
+				"label": "STEMI",
+				"text": "ST-höjning markerar STEMI-spår."
+			},
+			{
+				"type": "behandling",
+				"label": "NSTEMI",
+				"text": "DAPT/OAPT och fondaparinux anges."
+			}
+		]
+	},
+	{
+		"id": "dapt-asa-p2y12",
+		"category": "kardio",
+		"title": "Trombocythämning efter ACS",
+		"summary": "ASA + P2Y12-hämmare och duration enligt blödningsrisk.",
+		"tags": ["ASA", "ticagrelor", "klopidogrel", "DAPT", "trombyl"],
+		"points": [
+			{
+				"type": "behandling",
+				"label": "DAPT",
+				"text": "ASA + ticagrelor eller klopidogrel."
+			},
+			{
+				"type": "behandling",
+				"label": "Duration",
+				"text": "DAPT 12 månader anges; kortare duration vid hög blödningsrisk enligt individuell bedömning."
+			}
+		]
+	},
+	{
+		"id": "av-block-arytmi",
+		"category": "kardio",
+		"title": "AV-block, VT och takykardi",
+		"summary": "Rytmtolkning och akut behandling i anteckningen.",
+		"tags": ["AV-block", "VT", "amiodaron", "AVNRT", "EKG"],
+		"points": [
+			{
+				"type": "diagnos",
+				"label": "AV-block 2:1",
+				"text": "Varannan P-våg överleds; QRS-bredd och PQ-mönster hjälper lokalisation/riskbedömning."
+			},
+			{
+				"type": "komihag",
+				"label": "Papperhastighet",
+				"text": "Vid 50 mm/s motsvarar 10 mm cirka 0,1 s; vid 25 mm/s motsvarar 10 mm cirka 0,2 s."
+			},
+			{
+				"type": "behandling",
+				"label": "VT stabil",
+				"text": "Amiodaron anges vid cirkulatoriskt stabil VT."
+			},
+			{
+				"type": "behandling",
+				"label": "VT instabil",
+				"text": "Elkonvertering vid cirkulatorisk påverkan."
+			},
+			{
+				"type": "diagnos",
+				"label": "AVNRT",
+				"text": "Regelbunden smal takykardi utan tydliga P-vågor kan tala för AVNRT."
+			}
+		]
+	},
+	{
+		"id": "icd-crt",
+		"category": "kardio",
+		"title": "ICD och CRT-D",
+		"summary": "Hjärtsvikt/arytmirisk och breddökade QRS-komplex.",
+		"tags": ["ICD", "CRT-D", "EF", "LBBB", "QRS"],
+		"points": [
+			{
+				"type": "behandling",
+				"label": "ICD",
+				"text": "Övervägs vid hög risk för plötslig död, till exempel VT med cirkulatorisk påverkan eller EF ≤35 %."
+			},
+			{
+				"type": "behandling",
+				"label": "CRT-D",
+				"text": "EF ≤35 % + skänkelblock/bred QRS, särskilt LBBB och QRS >130 ms, anges."
+			},
+			{
+				"type": "behandling",
+				"label": "Pacemakerbehov",
+				"text": "Pacemakerbehov tillsammans med EF <40 % nämns som CRT-spår."
+			}
+		]
+	},
+	{
+		"id": "hjartsvikt-digoxin-raas",
+		"category": "kardio",
+		"title": "Hjärtsvikt – reducerad EF",
+		"summary": "Symtom, EF och läkemedelsspår.",
+		"tags": ["hjärtsvikt", "EF", "digoxin", "RAAS"],
+		"points": [
+			{
+				"type": "klinik",
+				"label": "Svullnad + låg EF",
+				"text": "Svullnad/ödem och reducerad EF nämns i hjärtsviktsdelen."
+			},
+			{
+				"type": "behandling",
+				"label": "Digoxin",
+				"text": "Digoxin nämns som behandlingsalternativ i anteckningen."
+			},
+			{
+				"type": "behandling",
+				"label": "RAAS-i",
+				"text": "RAAS-hämning behöver titreras/följas med njurfunktion, blodtryck och kalium."
+			}
+		]
+	},
+	{
+		"id": "pleuravatska-light",
+		"category": "lungor",
+		"title": "Pleuravätska – transudat/exsudat",
+		"summary": "Light's kriterier och grundläggande vätskekaraktärisering.",
+		"tags": ["pleuravätska", "transudat", "exsudat", "Light"],
+		"points": [
+			{
+				"type": "diagnos",
+				"label": "Transudat",
+				"text": "Lågt protein, albumin och LD nämns."
+			},
+			{
+				"type": "diagnos",
+				"label": "Exsudat",
+				"text": "Light's kriterier används för att skilja exsudat från transudat."
+			},
+			{
+				"type": "lab",
+				"label": "pH",
+				"text": "Lågt pH i pleuravätska kan tala för komplicerad genes; anteckningen nämner pH <7,2 i exsudatspår."
+			}
+		]
+	},
+	{
+		"id": "spirometri-obstruktivitet",
+		"category": "lungor",
+		"title": "Spirometri – obstruktivitet",
+		"summary": "FEV1/FVC som nyckeltal.",
+		"tags": ["spirometri", "FEV1", "FVC", "obstruktivitet"],
+		"points": [
+			{
+				"type": "diagnos",
+				"label": "FEV1/FVC",
+				"text": "FEV1/FVC <0,7 anges som obstruktivitet."
+			}
+		]
+	},
+	{
+		"id": "obesitas-hypoventilation",
+		"category": "lungor",
+		"title": "Obesitas-hypoventilationssyndrom",
+		"summary": "BMI, dagtidskoldioxid och nattliga besvär.",
+		"tags": ["obesitas", "hypoventilation", "CPAP", "CO2"],
+		"points": [
+			{
+				"type": "klinik",
+				"label": "Definition",
+				"text": "Patient med BMI >30 och hypoventilation/dagtidskoldioxidretention."
+			},
+			{
+				"type": "klinik",
+				"label": "Symtom",
+				"text": "Andfåddhet och nattliga besvär anges."
+			},
+			{
+				"type": "behandling",
+				"label": "CPAP",
+				"text": "CPAP anges som behandling i anteckningen."
+			}
+		]
+	},
+	{
+		"id": "anca-vaskulit-antikroppar",
+		"category": "reuma",
+		"title": "ANCA-antikroppar och vaskuliter",
+		"summary": "Koppling mellan ANCA-subtyper och småkärlsvaskuliter.",
+		"tags": ["ANCA", "PR3", "MPO", "GPA", "MPA", "EGPA", "vaskulit"],
+		"points": [
+			{
+				"type": "lab",
+				"label": "PR3-ANCA",
+				"text": "PR3-ANCA (tidigare c-ANCA) är starkast kopplat till granulomatös polyangit (GPA)."
+			},
+			{
+				"type": "lab",
+				"label": "MPO-ANCA",
+				"text": "MPO-ANCA (tidigare p-ANCA) är vanligast vid mikroskopisk polyangit (MPA) och eosinofil granulomatös polyangit (EGPA)."
+			},
+			{
+				"type": "diagnos",
+				"label": "GPA",
+				"text": "Granulomatös polyangit associeras ofta med ÖNH-engagemang, lungor och njurar samt PR3-ANCA."
+			},
+			{
+				"type": "diagnos",
+				"label": "MPA",
+				"text": "Mikroskopisk polyangit saknar ofta granulom och kopplas typiskt till MPO-ANCA."
+			},
+			{
+				"type": "diagnos",
+				"label": "EGPA",
+				"text": "Eosinofil granulomatös polyangit kännetecknas av astma, eosinofili och ibland MPO-ANCA."
+			},
+			{
+				"type": "komihag",
+				"label": "ANCA-negativ",
+				"text": "Alla patienter med ANCA-associerad vaskulit är inte ANCA-positiva; diagnosen baseras på helhetsbild inklusive klinik och biopsi."
+			}
+		]
+	}
 ]
