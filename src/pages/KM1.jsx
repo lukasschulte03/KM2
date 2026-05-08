@@ -1,37 +1,8 @@
-import { useMemo, useState } from "react";
+import { useState, useMemo } from "react";
 import km1Data from "../assets/km1.json";
 
-const CATEGORY_STYLES = {
-  njure: "bg-sky-50 text-sky-800 ring-sky-200",
-  reuma: "bg-rose-50 text-rose-800 ring-rose-200",
-  kardio: "bg-red-50 text-red-800 ring-red-200",
-  endokrin: "bg-amber-50 text-amber-800 ring-amber-200",
-  lungor: "bg-emerald-50 text-emerald-800 ring-emerald-200",
-  hematologi: "bg-purple-50 text-purple-800 ring-purple-200",
-  neurologi: "bg-indigo-50 text-indigo-800 ring-indigo-200",
-  infektion: "bg-orange-50 text-orange-800 ring-orange-200",
-  allmant: "bg-slate-50 text-slate-800 ring-slate-200",
-};
-
-const TYPE_STYLES = {
-  diagnos: "border-blue-200 bg-blue-50 text-blue-900",
-  behandling: "border-emerald-200 bg-emerald-50 text-emerald-900",
-  varning: "border-red-200 bg-red-50 text-red-900",
-  lab: "border-violet-200 bg-violet-50 text-violet-900",
-  klinik: "border-amber-200 bg-amber-50 text-amber-900",
-  komihag: "border-slate-200 bg-slate-50 text-slate-900",
-};
-
-const TYPE_LABELS = {
-  diagnos: "Diagnos",
-  behandling: "Behandling",
-  varning: "Varning",
-  lab: "Lab/prov",
-  klinik: "Klinik",
-  komihag: "Kom ihåg",
-};
-
-const CATEGORY_LABELS = {
+const KATEGORI_LABELS = {
+  alla: "Alla",
   njure: "Njure",
   reuma: "Reuma",
   kardio: "Kardiologi",
@@ -43,6 +14,39 @@ const CATEGORY_LABELS = {
   allmant: "Allmänt",
 };
 
+const KATEGORI_STYLES = {
+  njure:       { pill: "bg-sky-100 text-sky-800",        dot: "bg-sky-500" },
+  reuma:       { pill: "bg-rose-100 text-rose-800",      dot: "bg-rose-500" },
+  kardio:      { pill: "bg-red-100 text-red-800",        dot: "bg-red-500" },
+  endokrin:    { pill: "bg-amber-100 text-amber-800",    dot: "bg-amber-500" },
+  lungor:      { pill: "bg-emerald-100 text-emerald-800", dot: "bg-emerald-500" },
+  hematologi:  { pill: "bg-purple-100 text-purple-800",  dot: "bg-purple-500" },
+  neurologi:   { pill: "bg-indigo-100 text-indigo-800",  dot: "bg-indigo-500" },
+  infektion:   { pill: "bg-orange-100 text-orange-800",  dot: "bg-orange-500" },
+  allmant:     { pill: "bg-zinc-100 text-zinc-700",      dot: "bg-zinc-400" },
+};
+
+const PUNKTTYPER = ["alla", "klinik", "diagnos", "lab", "behandling", "varning", "komihag"];
+
+const PUNKTTYP_LABELS = {
+  alla: "Alla punkter",
+  klinik: "Klinik",
+  diagnos: "Diagnos",
+  lab: "Lab/prov",
+  behandling: "Behandling",
+  varning: "Varning",
+  komihag: "Kom ihåg",
+};
+
+const PUNKTTYP_STYLES = {
+  klinik:     "bg-amber-50 text-amber-800 border-amber-200",
+  diagnos:   "bg-sky-50 text-sky-800 border-sky-200",
+  lab:       "bg-violet-50 text-violet-800 border-violet-200",
+  behandling:"bg-emerald-50 text-emerald-800 border-emerald-200",
+  varning:   "bg-red-50 text-red-800 border-red-200",
+  komihag:   "bg-zinc-50 text-zinc-700 border-zinc-200",
+};
+
 function normalize(value) {
   return String(value || "")
     .toLowerCase()
@@ -50,188 +54,345 @@ function normalize(value) {
     .replace(/[\u0300-\u036f]/g, "");
 }
 
-function flattenText(entry) {
+function entryText(row) {
   return [
-    entry.title,
-    entry.category,
-    entry.summary,
-    entry.tags?.join(" "),
-    ...(entry.points || []).flatMap((point) => [point.label, point.text, point.type]),
+    row.title,
+    row.summary,
+    KATEGORI_LABELS[row.category],
+    row.tags?.join(" "),
+    ...(row.points || []).flatMap((p) => [p.type, PUNKTTYP_LABELS[p.type], p.label, p.text]),
   ]
     .filter(Boolean)
     .join(" ");
 }
 
-function ArrowPoint({ point }) {
-  const typeClass = TYPE_STYLES[point.type] || TYPE_STYLES.komihag;
-  const label = TYPE_LABELS[point.type] || "Punkt";
+function categoryLabel(category) {
+  return KATEGORI_LABELS[category] || category;
+}
+
+function CategoryPill({ category, small = false }) {
+  const style = KATEGORI_STYLES[category] || KATEGORI_STYLES.allmant;
 
   return (
-    <li className="relative pl-9">
-      <span className="absolute left-0 top-2 h-px w-6 bg-slate-300" />
-      <span className="absolute left-5 top-[3px] text-slate-400">›</span>
-      <div className={`rounded-xl border px-3 py-2 ${typeClass}`}>
-        <div className="mb-1 flex flex-wrap items-center gap-2">
-          <span className="rounded-full bg-white/80 px-2 py-0.5 text-[11px] font-bold uppercase tracking-wide">
-            {label}
+    <span
+      className={`inline-flex items-center gap-1 font-medium rounded-md ${style.pill} ${
+        small ? "text-[11px] px-1.5 py-0.5" : "text-xs px-2 py-1"
+      }`}
+    >
+      <span className={`w-1.5 h-1.5 rounded-full ${style.dot}`} />
+      {categoryLabel(category)}
+    </span>
+  );
+}
+
+function PointItem({ point }) {
+  return (
+    <li className="flex items-start gap-2 text-zinc-700">
+      <span className="mt-1.5 text-zinc-300 flex-shrink-0">→</span>
+      <div className="min-w-0">
+        <div className="flex flex-wrap items-center gap-1.5">
+          <span
+            className={`inline-flex items-center rounded-md border px-1.5 py-0.5 text-[11px] font-semibold ${
+              PUNKTTYP_STYLES[point.type] ?? PUNKTTYP_STYLES.komihag
+            }`}
+          >
+            {PUNKTTYP_LABELS[point.type] || "Punkt"}
           </span>
-          {point.label && <span className="font-semibold">{point.label}</span>}
+          {point.label && <span className="font-semibold text-zinc-800">{point.label}</span>}
         </div>
-        <p className="text-sm leading-relaxed">{point.text}</p>
+        <p className="mt-0.5 leading-relaxed">{point.text}</p>
       </div>
     </li>
   );
 }
 
-function Km1Card({ entry }) {
-  const categoryClass = CATEGORY_STYLES[entry.category] || CATEGORY_STYLES.allmant;
-
+function PointList({ points }) {
   return (
-    <article className="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md sm:p-5">
-      <div className="mb-4 flex flex-wrap items-start justify-between gap-3">
-        <div>
-          <div className="mb-2 flex flex-wrap items-center gap-2">
-            <span className={`rounded-full px-3 py-1 text-xs font-bold ring-1 ${categoryClass}`}>
-              {CATEGORY_LABELS[entry.category] || entry.category}
-            </span>
-            {entry.sourceNote && (
-              <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
-                {entry.sourceNote}
-              </span>
-            )}
-          </div>
-          <h2 className="text-lg font-bold text-slate-950 sm:text-xl">{entry.title}</h2>
-          {entry.summary && <p className="mt-1 text-sm text-slate-600">{entry.summary}</p>}
-        </div>
-      </div>
-
-      <ul className="space-y-3">
-        {(entry.points || []).map((point, index) => (
-          <ArrowPoint key={`${entry.id}-${index}`} point={point} />
-        ))}
-      </ul>
-
-      {!!entry.tags?.length && (
-        <div className="mt-4 flex flex-wrap gap-2 border-t border-slate-100 pt-4">
-          {entry.tags.map((tag) => (
-            <span key={tag} className="rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-600">
-              #{tag}
-            </span>
-          ))}
-        </div>
-      )}
-    </article>
+    <ul className="space-y-2">
+      {(points || []).map((point, index) => (
+        <PointItem key={index} point={point} />
+      ))}
+    </ul>
   );
 }
 
 export default function KM1() {
-  const [query, setQuery] = useState("");
-  const [category, setCategory] = useState("alla");
-  const [type, setType] = useState("alla");
+  const [search, setSearch] = useState("");
+  const [activeKat, setActiveKat] = useState("alla");
+  const [activeTypes, setActiveTypes] = useState([]);
+  const [expanded, setExpanded] = useState(null);
 
-  const categories = useMemo(() => {
-    const unique = [...new Set(km1Data.map((entry) => entry.category))];
-    return ["alla", ...unique];
-  }, []);
-
-  const types = useMemo(() => {
-    const unique = [...new Set(km1Data.flatMap((entry) => entry.points?.map((point) => point.type) || []))];
+  const kategorier = useMemo(() => {
+    const unique = [...new Set(km1Data.map((row) => row.category))];
     return ["alla", ...unique];
   }, []);
 
   const filtered = useMemo(() => {
-    const q = normalize(query);
+    const q = normalize(search.trim());
+    const hasTypeFilter = activeTypes.length > 0;
+
     return km1Data
-      .filter((entry) => category === "alla" || entry.category === category)
-      .filter((entry) => type === "alla" || entry.points?.some((point) => point.type === type))
-      .filter((entry) => !q || normalize(flattenText(entry)).includes(q));
-  }, [query, category, type]);
+      .map((row) => {
+        const matchKat = activeKat === "alla" || row.category === activeKat;
+        if (!matchKat) return null;
+
+        const visiblePoints = hasTypeFilter
+          ? (row.points || []).filter((point) => activeTypes.includes(point.type))
+          : row.points || [];
+
+        if (hasTypeFilter && visiblePoints.length === 0) return null;
+
+        if (q && !normalize(entryText(row)).includes(q)) return null;
+
+        return { ...row, visiblePoints };
+      })
+      .filter(Boolean);
+  }, [search, activeKat, activeTypes]);
+
+  const togglePointType = (type) => {
+    if (type === "alla") {
+      setActiveTypes([]);
+      return;
+    }
+
+    setActiveTypes((prev) =>
+      prev.includes(type) ? prev.filter((item) => item !== type) : [...prev, type]
+    );
+  };
+
+  const toggleRow = (id) => setExpanded((prev) => (prev === id ? null : id));
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100 px-4 py-6 text-slate-900 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-7xl">
-        <section className="mb-6 overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-sm">
-          <div className="bg-slate-950 px-5 py-6 text-white sm:px-8 sm:py-8">
-            <p className="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-slate-300">KM1</p>
-            <h1 className="text-3xl font-black tracking-tight sm:text-4xl">Internmedicin – snabböversikt</h1>
-            <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-300 sm:text-base">
-              Sökbar sammanställning av handskrivna KM1-anteckningar. Varje punkt är separerad och markerad efter typ: klinik, diagnostik, behandling, lab eller varning.
-            </p>
-          </div>
-
-          <div className="grid gap-4 p-4 sm:grid-cols-[1fr_auto_auto] sm:p-5">
-            <label className="block">
-              <span className="mb-1 block text-xs font-bold uppercase tracking-wide text-slate-500">Sök</span>
-              <input
-                value={query}
-                onChange={(event) => setQuery(event.target.value)}
-                placeholder="Sök t.ex. RAAS, synkope, GCA, troponin..."
-                className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none ring-slate-300 transition placeholder:text-slate-400 focus:ring-4"
-              />
-            </label>
-
-            <label className="block sm:min-w-44">
-              <span className="mb-1 block text-xs font-bold uppercase tracking-wide text-slate-500">Kategori</span>
-              <select
-                value={category}
-                onChange={(event) => setCategory(event.target.value)}
-                className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none ring-slate-300 transition focus:ring-4"
-              >
-                {categories.map((cat) => (
-                  <option key={cat} value={cat}>
-                    {cat === "alla" ? "Alla kategorier" : CATEGORY_LABELS[cat] || cat}
-                  </option>
-                ))}
-              </select>
-            </label>
-
-            <label className="block sm:min-w-44">
-              <span className="mb-1 block text-xs font-bold uppercase tracking-wide text-slate-500">Punkttyp</span>
-              <select
-                value={type}
-                onChange={(event) => setType(event.target.value)}
-                className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none ring-slate-300 transition focus:ring-4"
-              >
-                {types.map((item) => (
-                  <option key={item} value={item}>
-                    {item === "alla" ? "Alla punkter" : TYPE_LABELS[item] || item}
-                  </option>
-                ))}
-              </select>
-            </label>
-          </div>
-        </section>
-
-        <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-          <p className="text-sm font-medium text-slate-600">
-            Visar <span className="font-black text-slate-950">{filtered.length}</span> av {km1Data.length} ämneskort
+    <div className="min-h-screen bg-zinc-50 font-sans">
+      {/* Header */}
+      <div className="bg-white border-b border-zinc-200 px-6 py-8">
+        <div className="max-w-6xl mx-auto">
+          <p className="text-xs font-semibold tracking-widest uppercase text-zinc-400 mb-1">
+            KM1
           </p>
-          <button
-            type="button"
-            onClick={() => {
-              setQuery("");
-              setCategory("alla");
-              setType("alla");
-            }}
-            className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm transition hover:bg-slate-50"
-          >
-            Rensa filter
-          </button>
+          <h1 className="text-3xl font-bold text-zinc-900 tracking-tight mb-1">
+            Internmedicin – snabböversikt
+          </h1>
+          <p className="text-sm text-zinc-500">
+            {km1Data.length} ämneskort · njure, reuma, kardiologi, lungor, endokrinologi och hematologi
+          </p>
+        </div>
+      </div>
+
+      <div className="max-w-6xl mx-auto px-6 py-6 space-y-4">
+        {/* Search + category filters */}
+        <div className="flex flex-col gap-3">
+          <div className="flex flex-col sm:flex-row gap-3">
+            <div className="relative flex-1">
+              <svg
+                className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-400 pointer-events-none"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z"
+                />
+              </svg>
+              <input
+                type="search"
+                placeholder="Sök t.ex. RAAS, synkope, GCA, troponin..."
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                className="w-full pl-9 pr-4 py-2.5 text-sm bg-white border border-zinc-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-zinc-900/10 focus:border-zinc-400 transition text-zinc-800 placeholder:text-zinc-400"
+              />
+            </div>
+
+            <button
+              type="button"
+              onClick={() => {
+                setSearch("");
+                setActiveKat("alla");
+                setActiveTypes([]);
+              }}
+              className="px-3 py-2 text-xs font-medium rounded-lg border bg-white text-zinc-600 border-zinc-200 hover:border-zinc-400 hover:text-zinc-900 transition-all"
+            >
+              Rensa filter
+            </button>
+          </div>
+
+          <div className="flex gap-2 flex-wrap">
+            {kategorier.map((k) => (
+              <button
+                key={k}
+                onClick={() => setActiveKat(k)}
+                className={`px-3 py-2 text-xs font-medium rounded-lg border transition-all ${
+                  activeKat === k
+                    ? "bg-zinc-900 text-white border-zinc-900"
+                    : "bg-white text-zinc-600 border-zinc-200 hover:border-zinc-400 hover:text-zinc-900"
+                }`}
+              >
+                {k !== "alla" && (
+                  <span
+                    className={`inline-block w-1.5 h-1.5 rounded-full mr-1.5 mb-0.5 ${
+                      KATEGORI_STYLES[k]?.dot ?? "bg-zinc-400"
+                    }`}
+                  />
+                )}
+                {k === "alla" ? "Alla" : categoryLabel(k)}
+              </button>
+            ))}
+          </div>
+
+          <div className="flex gap-2 flex-wrap">
+            {PUNKTTYPER.map((t) => (
+              <button
+                key={t}
+                onClick={() => togglePointType(t)}
+                className={`px-3 py-1.5 text-xs font-medium rounded-lg border transition-all ${
+                  (t === "alla" ? activeTypes.length === 0 : activeTypes.includes(t))
+                    ? "bg-zinc-900 text-white border-zinc-900"
+                    : "bg-white text-zinc-600 border-zinc-200 hover:border-zinc-400 hover:text-zinc-900"
+                }`}
+              >
+                {PUNKTTYP_LABELS[t] || t}
+              </button>
+            ))}
+          </div>
         </div>
 
-        {filtered.length > 0 ? (
-          <section className="grid gap-4 lg:grid-cols-2">
-            {filtered.map((entry) => (
-              <Km1Card key={entry.id} entry={entry} />
-            ))}
-          </section>
-        ) : (
-          <section className="rounded-3xl border border-dashed border-slate-300 bg-white p-10 text-center shadow-sm">
-            <h2 className="text-xl font-bold text-slate-950">Inga träffar</h2>
-            <p className="mt-2 text-sm text-slate-600">Testa att söka bredare eller rensa filtren.</p>
-          </section>
-        )}
+        {/* Result count */}
+        <p className="text-xs text-zinc-400">
+          {filtered.length} av {km1Data.length} ämneskort visas
+          {activeTypes.length > 0 && ` · endast ${activeTypes.map((t) => PUNKTTYP_LABELS[t]).join(", ").toLowerCase()}`}
+        </p>
+
+        {/* Table – desktop */}
+        <div className="hidden md:block bg-white rounded-xl border border-zinc-200 overflow-hidden">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-zinc-100 bg-zinc-50">
+                <th className="text-left text-xs font-semibold text-zinc-400 uppercase tracking-wider px-5 py-3 w-64">
+                  Ämne
+                </th>
+                <th className="text-left text-xs font-semibold text-zinc-400 uppercase tracking-wider px-4 py-3 w-36">
+                  Kategori
+                </th>
+                <th className="text-left text-xs font-semibold text-zinc-400 uppercase tracking-wider px-4 py-3">
+                  Punkter
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {filtered.length === 0 ? (
+                <tr>
+                  <td colSpan={3} className="text-center py-12 text-zinc-400 text-sm">
+                    Inga resultat – prova en annan sökning
+                  </td>
+                </tr>
+              ) : (
+                filtered.map((row, i) => (
+                  <tr
+                    key={row.id}
+                    className={`border-b border-zinc-100 last:border-0 hover:bg-zinc-50/70 transition-colors ${
+                      i % 2 === 0 ? "" : "bg-zinc-50/30"
+                    }`}
+                  >
+                    <td className="px-5 py-4 align-top">
+                      <p className="font-semibold text-zinc-900">{row.title}</p>
+                      {row.summary && (
+                        <p className="mt-1 text-xs text-zinc-500 leading-relaxed">{row.summary}</p>
+                      )}
+                      {!!row.tags?.length && (
+                        <div className="mt-2 flex flex-wrap gap-1">
+                          {row.tags.slice(0, 5).map((tag) => (
+                            <span key={tag} className="text-[11px] text-zinc-400">
+                              #{tag}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+                    </td>
+                    <td className="px-4 py-4 align-top">
+                      <CategoryPill category={row.category} />
+                    </td>
+                    <td className="px-4 py-4 align-top">
+                      <PointList points={row.visiblePoints} />
+                    </td>
+                  </tr>
+                ))
+              )}
+            </tbody>
+          </table>
+        </div>
+
+        {/* Cards – mobile */}
+        <div className="md:hidden space-y-2">
+          {filtered.length === 0 ? (
+            <div className="text-center py-12 text-zinc-400 text-sm">
+              Inga resultat – prova en annan sökning
+            </div>
+          ) : (
+            filtered.map((row) => {
+              const isOpen = expanded === row.id;
+              return (
+                <button
+                  key={row.id}
+                  onClick={() => toggleRow(row.id)}
+                  className="w-full text-left bg-white rounded-xl border border-zinc-200 overflow-hidden hover:border-zinc-300 transition-colors"
+                >
+                  <div className="flex items-center justify-between px-4 py-3.5">
+                    <div className="flex items-center gap-3 min-w-0">
+                      <CategoryPill category={row.category} small />
+                      <span className="font-semibold text-zinc-900 text-sm truncate">
+                        {row.title}
+                      </span>
+                    </div>
+                    <svg
+                      className={`w-4 h-4 text-zinc-400 flex-shrink-0 ml-2 transition-transform duration-200 ${
+                        isOpen ? "rotate-180" : ""
+                      }`}
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+
+                  {isOpen && (
+                    <div className="px-4 pb-4 border-t border-zinc-100 pt-3 space-y-3">
+                      {row.summary && (
+                        <p className="text-xs text-zinc-500 leading-relaxed">{row.summary}</p>
+                      )}
+
+                      <div>
+                        <p className="text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-1.5">
+                          Punkter
+                        </p>
+                        <PointList points={row.visiblePoints} />
+                      </div>
+
+
+                      {!!row.tags?.length && (
+                        <div className="flex flex-wrap gap-1.5">
+                          {row.tags.map((tag) => (
+                            <span
+                              key={tag}
+                              className="rounded-md bg-zinc-100 px-1.5 py-0.5 text-[11px] text-zinc-500"
+                            >
+                              #{tag}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </button>
+              );
+            })
+          )}
+        </div>
       </div>
-    </main>
+    </div>
   );
 }
