@@ -10,7 +10,7 @@ const ZOOM_STEP = 0.15; // steglängd för +/- knappar och scroll
 // ─────────────────────────────────────────────
 //  IMAGE PATH – byt filnamn vid behov
 // ─────────────────────────────────────────────
-const IMAGE_SRC = "/src/assets/oversikt.png";
+const IMAGE_SRC = "/oversikt.png";
 
 // ─────────────────────────────────────────────
 //  HELPERS
