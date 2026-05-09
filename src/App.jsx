@@ -17,6 +17,14 @@ const AMNEN = [
 		emoji: "📚",
 		aktiv: true,
 	},
+	{
+		id: "oversikt",
+		titel: "Bakteriell Översikt",
+		beskrivning: "Stor schematisk översiktsbild",
+		path: "/oversikt",
+		emoji: "🗺️",
+		aktiv: true,
+	},
 ];
 
 export default function App() {
