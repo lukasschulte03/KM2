@@ -234,7 +234,7 @@ export default function Oversikt() {
   //  RENDER
   // ─────────────────────────────────────────────
   return (
-		<div className="flex flex-col bg-zinc-900" style={{ height: "calc(100vh - 49px)" }}>
+		<div className="flex flex-col bg-zinc-900" style={{ height: "calc(100vh)" }}>
 			{/* Canvas */}
 			<div
 				ref={containerRef}
