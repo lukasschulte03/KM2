@@ -6,6 +6,7 @@ import App from './App.jsx'
 import Infektion from './pages/Infektion.jsx'
 import KM1 from "./pages/KM1.jsx";
 import Oversikt from "./pages/Oversikt.jsx";
+import Hud from "./pages/Hud.jsx";
 
 
 createRoot(document.getElementById("root")).render(
@@ -15,6 +16,7 @@ createRoot(document.getElementById("root")).render(
 			<Route path="/infektion" element={<Infektion />} />
 			<Route path="/km1" element={<KM1 />} />
 			<Route path="/oversikt" element={<Oversikt />} />
+			<Route path="/hud" element={<Hud />} />
 		</Routes>
 	</BrowserRouter>,
 );

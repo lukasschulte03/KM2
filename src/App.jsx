@@ -25,6 +25,14 @@ const AMNEN = [
 		emoji: "🗺️",
 		aktiv: true,
 	},
+	{
+		id: "hud",
+		titel: "Hud & Mjukdelar",
+		beskrivning: "Diagnoser, behandlingar & mer",
+		path: "/hud",
+		emoji: "🧴",
+		aktiv: true,
+	},
 ];
 
 export default function App() {

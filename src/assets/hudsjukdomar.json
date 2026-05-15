@@ -1,0 +1,1835 @@
+[
+  {
+    "id": 1,
+    "diagnos": "Chlamydia trachomatis",
+    "kategori": "STI's",
+    "info": [
+      "Intracellulär, liten, gramnegativ, kock",
+      "Ses inte i mikroskop",
+      "1-3v inkubationstid",
+      "Överförs vid nära slemhinnekontakt, vid samlag och vid förlossning."
+    ],
+    "symptom": [
+      "Uretrit, Prostatit, Cervicit, Endometrit, Epididymit",
+      {
+        "text": "Upprepade infektioner → Salpingit",
+        "note": "Inflammation i äggledaren"
+      },
+      "uretrit, uveit, artrit → can’t pee, can’t see, can’t climb a tree"
+    ],
+    "diagnostik": [
+      {
+        "text": "PCR alltid",
+        "note": "typ av NAAT"
+      }
+    ],
+    "behandling": [
+      "Doxycyklin 100mg x 2 i 7d",
+      "Azitromycin 500 mg x 3 i 7 dagar om gravid efter 12 veckor - uteslut då Mycoplasma genitalium"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 2,
+    "diagnos": "Gonorré",
+    "kategori": "STI's",
+    "info": [
+      "Neisseria gonorrhoeae",
+      "Gramnegativ diplokock",
+      "2-10 d inkubationstid",
+      "Odla alltid för gonokocker innan behandling"
+    ],
+    "symptom": [
+      "Cervicit",
+      "Tröga flytningar",
+      "Dysuri"
+    ],
+    "diagnostik": [
+      "Direktmikroskopi för diplokocker, PCR, odling"
+    ],
+    "behandling": [
+      "Ceftriaxon 1mg i.m."
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 3,
+    "diagnos": "Mycoplasma Genitalium",
+    "kategori": "STI's",
+    "info": [
+      "Kan vara M. genitalium ist för klamydia om behandling inte fungerar"
+    ],
+    "symptom": [
+      "Symtom som vid klamydia"
+    ],
+    "diagnostik": [
+      "Direktmikroskopi",
+      "Wet smear"
+    ],
+    "behandling": [
+      "Azitromycin 500mg x 1 - 250mg dag 2-5"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 4,
+    "diagnos": "HSV-2",
+    "kategori": "STI's",
+    "info": [
+      "Herpes simplex-virus typ 2",
+      "Vanligaste orsaken till genital herpes",
+      "Livslång latent infektion - vilar i nervganglier"
+    ],
+    "symptom": [
+      "Små grupperade vesikler",
+      "Smärtsamma erosioner",
+      "Kan få symptom av klida och liknande innan blåsorna"
+    ],
+    "diagnostik": [
+      "PCR från blåsor"
+    ],
+    "behandling": [
+      "Valaciklovir 500 mg x 2 i 5–10"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 5,
+    "diagnos": "Kondylom",
+    "kategori": "STI's",
+    "info": [
+      "Orsakas av HPV, ofta 6 & 11",
+      "Behöver barriärskada för infektion",
+      "HPV vaccin minskar risken för kondylom"
+    ],
+    "symptom": [
+      "Genitala vårtor",
+      "Klåda, sveda, blödningar",
+      {
+        "text": "Dyspareuni",
+        "note": "smärta vid samlag"
+      }
+    ],
+    "diagnostik": [
+      "Ofta kliniskt"
+    ],
+    "behandling": [
+      {
+        "text": "Podophyllotoxin",
+        "note": "Wartec - kräm"
+      },
+      "Wartec är kontraindicerad vid graviditet",
+      "Kan också kryo/bränna bort vårtorna",
+      "---"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 6,
+    "diagnos": "Venösa bensår",
+    "kategori": "Bensår",
+    "info": [
+      "Multifaktoriellt ofta",
+      "Nedsatt venklaffunktion"
+    ],
+    "symptom": [
+      "Sår runt ankeln",
+      "Fortfarande palpabla pulsar",
+      "Pittingödem",
+      "Gul fibrinbeläggning i sår",
+      "Kringliggande hypostatiska eksem"
+    ],
+    "diagnostik": [],
+    "behandling": [
+      "Kompression",
+      "Skrapa bort fibrinbeläggning",
+      "Kirurgiskt ta bort ytliga vener"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 7,
+    "diagnos": "Arteriella bensår",
+    "kategori": "Bensår",
+    "info": [
+      "Orsakas av trånga artärer",
+      "Minskad blodtillförsel",
+      "Vävnadsnekros"
+    ],
+    "symptom": [
+      "Distala sår",
+      "Ischemisk smärta",
+      "Svaga pulser",
+      "Sänkt ABI",
+      "Frånvaro av hårväxt",
+      "Smärta som förvärras i högläge",
+      "Claudicatio intermittens"
+    ],
+    "diagnostik": [
+      {
+        "heading": "ABI",
+        "items": [
+          {
+            "text": "\\< 0.9",
+            "note": "patologiskt"
+          },
+          {
+            "text": "\\< 0.7",
+            "note": "riktigt patologiskt"
+          },
+          {
+            "text": "\\< 0.5",
+            "note": "ischemirisk"
+          },
+          {
+            "text": "\\> 1.4",
+            "note": "falskt förhögt/förstelnade kärl"
+          }
+        ]
+      }
+    ],
+    "behandling": [],
+    "kommentar": ""
+  },
+  {
+    "id": 8,
+    "diagnos": "Hypostatiska eksem",
+    "kategori": "Bensår",
+    "info": [
+      "Ofta prekursor till venösa bensår",
+      "Diffus utbredning",
+      "Orsakas av venös insufficiens"
+    ],
+    "symptom": [
+      "Klåda",
+      "Rodnad",
+      "Fjällning"
+    ],
+    "diagnostik": [
+      "Diagnostiseras kliniskt"
+    ],
+    "behandling": [
+      {
+        "text": "Kaliumpermanganat",
+        "note": "Minska klåda"
+      },
+      "Grupp 3 kortisonkräm",
+      "Kompression"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 9,
+    "diagnos": "Diabetes fotsår",
+    "kategori": "Bensår",
+    "info": [
+      "Neuropatisk komponent",
+      "Personen känner inte att de skadar fötterna",
+      "Ofta arteriell komponent på det"
+    ],
+    "symptom": [
+      "Plantara sår",
+      "Inte lika smärtsamt som arteriella, då tappad känsel",
+      "Omgivet av förhårdnad"
+    ],
+    "diagnostik": [
+      "Monofilament & stämgaffel",
+      "Klinsk bild",
+      "ABI"
+    ],
+    "behandling": [
+      "Avlastning",
+      "Regelbunden fotvård",
+      "Behandla underliggande diabetes"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 10,
+    "diagnos": "Leukocytoklastisk vaskulit",
+    "kategori": "Bensår",
+    "info": [
+      "Immunkomplexmedierad inflammation/kärldestruktion",
+      "Kan skada njurarna",
+      "Ofta efter nyinsatt läkemedel eller infektion"
+    ],
+    "symptom": [
+      "Palpabel purpura",
+      "Ej borttryckbar",
+      "Akut debut bilateralt",
+      "Ofta hudengagemang",
+      "Ibland njurengagemang",
+      "Feber",
+      "Allmänpåverkan"
+    ],
+    "diagnostik": [
+      "PAD stance biopsi",
+      "Immunofluorescence",
+      "Klinska bilden väger in"
+    ],
+    "behandling": [
+      "Eliminera utlösande faktor",
+      "Grupp 3-4 kortisonkräm",
+      "Kompressionsbehandling"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 11,
+    "diagnos": "Pyoderma gangrenosum",
+    "kategori": "Bensår",
+    "info": [
+      "Kan komma till följd av trauma",
+      "Icke-infektiös!",
+      "Kopplat till systemsjukdomar såsom IBD, RA, annat"
+    ],
+    "symptom": [
+      "Kraftigt smärtsamt sår",
+      "Purulent sår",
+      "Rödvioletta kanter"
+    ],
+    "diagnostik": [
+      {
+        "text": "Hudbiopsi från sårkant",
+        "note": "neutrofil inflammation"
+      },
+      "Sårodling för att utesluta infektion"
+    ],
+    "behandling": [
+      "Grupp 3-4 kortisonkräm & p.o. Prednisolon",
+      "Kan kräva månaders lång behandling"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 12,
+    "diagnos": "Basaliom",
+    "kategori": "Bensår",
+    "info": [
+      "Basalcellscancer",
+      "Vanligaste formen av hudcancer",
+      "Nodulärt, superficiellt, morfeiformt",
+      "Orsakas av UV-ljus",
+      "Kan leda till skivepitelcancer"
+    ],
+    "symptom": [
+      "Kan blöda",
+      "Teleangiektasier"
+    ],
+    "diagnostik": [
+      "Excision och PAD"
+    ],
+    "behandling": [
+      "Excision vid nodulärt",
+      "Superficiellt kan kryobehandlas",
+      "Mohs kirurgi i ansiktet"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 13,
+    "diagnos": "Traumatiska sår/hydrostatiska sår",
+    "kategori": "Bensår",
+    "info": [
+      "Till följd av trauma med underliggande hydrostatist ödem"
+    ],
+    "symptom": [
+      "Bensvullnad i sårkanten",
+      "Oregelbundna sårkanter"
+    ],
+    "diagnostik": [
+      "Klinisk bild",
+      "Anamnestiskt"
+    ],
+    "behandling": [
+      "Kompression under läkningsprocessen",
+      "---"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 14,
+    "diagnos": "Atopiskt eksem",
+    "kategori": "Eksem",
+    "info": [
+      "Börjar ofta i barndomen",
+      "Försvagad hudbarriär med överaktivt immunsystem"
+    ],
+    "symptom": [
+      "Kroniskt kliande",
+      "Atopiskt eksem",
+      {
+        "heading": "Lokalisation",
+        "items": [
+          "Barn - kinder, bål, sträcksidor",
+          "Vuxna - böjveck, hals, händer"
+        ]
+      }
+    ],
+    "diagnostik": [
+      "Klinisk diagnos",
+      "Anamnes"
+    ],
+    "behandling": [
+      "Mjukgörande",
+      "Grupp 1-3 kortisonkräm",
+      "Takrolimus om kortison är kontraindicerat"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 15,
+    "diagnos": "Seborroiskt eksem (Mjälleksem)",
+    "kategori": "Eksem",
+    "info": [
+      "Drabbar områden med mycket talgkörtlar",
+      "Mild kronisk inflammation",
+      "Kan bero på reaktion mot Malassezia",
+      "Ofta recidiverande"
+    ],
+    "symptom": [
+      "Fjällande, kliande",
+      "Ofta hårfäste eller ansikte"
+    ],
+    "diagnostik": [
+      "Klinisk diagnos"
+    ],
+    "behandling": [
+      "Ketokonazolschampo 1:a hand",
+      "Kortisonkräm 1-3 beroende på allvarlighetsgrad"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 16,
+    "diagnos": "Kontakteksem",
+    "kategori": "Eksem",
+    "info": [
+      "Finns både allergisk och icke-allergisk",
+      "Lokalisation spelar stor roll i att hitta allergi"
+    ],
+    "symptom": [
+      "Rodnad",
+      "Klåda",
+      "Ibland vätskande"
+    ],
+    "diagnostik": [
+      "Lapptest",
+      "Anamnestiskt"
+    ],
+    "behandling": [
+      "Eliminera allergikällan",
+      "Mjukgörande kräm",
+      "Grupp 1-3 kortisonkräm",
+      "Fysiskt skydd såsom handskar"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 17,
+    "diagnos": "Neurodermit (lichen simplex)",
+    "kategori": "Eksem",
+    "info": [
+      "Uppstår till följd av intensiv rivning → epidermisförtjockning och klåda",
+      "Leta efter bevarad hud där patienten inte når",
+      "Kan uppstå Prurigo nodularis, som kliar ännu mer"
+    ],
+    "symptom": [
+      "Lichenifiering",
+      "Fjällande",
+      "Exkoriationer"
+    ],
+    "diagnostik": [
+      "Klinisk diagnos"
+    ],
+    "behandling": [
+      "Stoppa klådcirkeln",
+      "Ocklusion",
+      "Grupp 3 kortisonkräm",
+      "Mjukröntgen (Bucky)",
+      "---"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 18,
+    "diagnos": "Akut kutan LE",
+    "kategori": "Kollagenoser (autoimmuna bindvävssjukdomar)",
+    "info": [
+      "Alltid associerat med SLE",
+      "Är en CLE",
+      "Utslagen är övergående",
+      "Inga ärr"
+    ],
+    "symptom": [
+      "Fjärilserytem",
+      "Den nasolabialafåran besparas alltid vid akut kutan LE",
+      "Fotosensitivitet"
+    ],
+    "diagnostik": [
+      "Klinisk bild",
+      {
+        "text": "SLE prover",
+        "note": "ANA, Anti-dsDNA"
+      },
+      "Biopsi vid oklarhet, IF"
+    ],
+    "behandling": [
+      "Solskydd",
+      "Grupp 2-3 kortisonkräm",
+      "Takrolimus",
+      {
+        "text": "Hydroxiklorokin (Plaquenil)",
+        "note": "SLE underhållsbehandling"
+      }
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 19,
+    "diagnos": "Subakut kutan LE",
+    "kategori": "Kollagenoser (autoimmuna bindvävssjukdomar)",
+    "info": [
+      "⅓ utlöses av läkemedel",
+      "Finns en annulär och psoriasiform"
+    ],
+    "symptom": [
+      "Symmetrisk solutslag på övre bål/sträcksidor",
+      "Fotosensitivitet"
+    ],
+    "diagnostik": [
+      "Kliniska bilden",
+      "Biopsi, IF",
+      "Anti-SSA, Ro positiv ofta"
+    ],
+    "behandling": [
+      "Uteslut utlösande läkemedel"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 20,
+    "diagnos": "Intermittent kutan LE (lupus tumidus)",
+    "kategori": "Kollagenoser (autoimmuna bindvävssjukdomar)",
+    "info": [
+      "Ljuskänsligaste kutana LE:n",
+      "Utslag på ljusexponerade ytor",
+      "Låg risk att utvecklas till SLE",
+      "Läker utan ärr"
+    ],
+    "symptom": [
+      "Röda–violetta, upphöjda plaque",
+      "Urtikarialiknande",
+      "Ingen fjällning",
+      "Ingen ärrbildning"
+    ],
+    "diagnostik": [
+      "Kliniska bilden",
+      "Biopsi, IF ofta negativ",
+      "Blodprover för SLE-screening"
+    ],
+    "behandling": [
+      "Solskydd",
+      "Grupp 2-3 kortisonkräm kort kur",
+      "Takrolimus",
+      "Plaquenil vid utbredda besvär"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 21,
+    "diagnos": "Kroniskt kutan LE (Diskoid bl.a.)",
+    "kategori": "Kollagenoser (autoimmuna bindvävssjukdomar)",
+    "info": [
+      "Vanligaste formen av kutan LE",
+      "Läker med ärr"
+    ],
+    "symptom": [
+      "Diskoidformade utslag",
+      "Kan drabba mucosa",
+      "Sämre på sommaren"
+    ],
+    "diagnostik": [
+      "Stancebiopsi från aktiv kant, IF"
+    ],
+    "behandling": [
+      "Grupp 4 kortisonkräm i ansiktet'",
+      "Plaquenil"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 22,
+    "diagnos": "Dermatomyosit",
+    "kategori": "Kollagenoser (autoimmuna bindvävssjukdomar)",
+    "info": [
+      "Kronisk idiopatisk inflammatorisk muskelsjukdom",
+      "Stark koppling till samtidig cancer",
+      "Biopsi visar lichenoid vävnadsreaktion - som vid lupus"
+    ],
+    "symptom": [
+      "Proximal muskelsvaghet",
+      "Gottrons papler",
+      "Heliotropt erythem",
+      "Periorbitalt ödem",
+      "V-tecknet, Hölstertecknet och sjal-tecknet"
+    ],
+    "diagnostik": [
+      "Klinisk bild",
+      "Muskelenzymer - CK, LD, ASAT, ALAT"
+    ],
+    "behandling": [
+      "Prednisolon",
+      "Metotrexat ibland",
+      "Solskydd",
+      "Grupp 3 kortisonkräm"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 23,
+    "diagnos": "Lokaliserad sklerodermi (morfea)",
+    "kategori": "Kollagenoser (autoimmuna bindvävssjukdomar)",
+    "info": [
+      "Är en sklerodermi",
+      "Oftast isolerat till huden",
+      "Fibroblastaktivering → kollagenos",
+      "Vanligare hos kvinnor"
+    ],
+    "symptom": [
+      "Välavgränsade, förtjockade, hårda, missfärgade hud plack",
+      "Hyperpigmenterade kanter"
+    ],
+    "diagnostik": [
+      "Ofta klinisk diagnos",
+      "Hudbiopsi vid oklarhet",
+      "Bedöm djuphet av plack"
+    ],
+    "behandling": [
+      "Grupp 3-4 kortisonkräm",
+      "Takrolimus ibland",
+      "Ljusbehandling",
+      "Vid djupare morfea, kontakta specialist → metotrexat"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 24,
+    "diagnos": "Systemisk skleros",
+    "kategori": "Kollagenoser (autoimmuna bindvävssjukdomar)",
+    "info": [
+      {
+        "heading": "Begränsad",
+        "items": [
+          "Underarmar & underben & ansikte",
+          "Långsammare förlopp",
+          "Mer risk för PAH"
+        ]
+      },
+      {
+        "heading": "Diffus",
+        "items": [
+          "Allt som inte är distalt",
+          "Snabbare förlopp",
+          "Mer risk för ILD"
+        ]
+      }
+    ],
+    "symptom": [
+      "Raynauds fenomen",
+      "Sklerodaktyli",
+      "Vaskulopati",
+      "Calcinosis cutis",
+      "Puffy hands",
+      "Salt and pepper sign"
+    ],
+    "diagnostik": [
+      "Klinisk bild",
+      {
+        "text": "Anticentromerantikroppar",
+        "note": "begränsad SSc"
+      },
+      {
+        "text": "Anti-Scl-70 & anti-RNA-polymerase III",
+        "note": "diffus SSc"
+      }
+    ],
+    "behandling": [
+      "Symptombehandling",
+      "Rökstopp",
+      "Kalciumflödeshämmare → Raynauds",
+      "Metotrexat eller mykofenolat → Hudengagemang",
+      "Mykofenolat eller annan immunosuppression → Lungengagemang",
+      "---"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 25,
+    "diagnos": "Pemfigoid",
+    "kategori": "Blåsdermatoser",
+    "info": [
+      "Bullös pemfigoid är den vanligaste blåsdermatosen",
+      "Subepidermal blåsbildning",
+      "Hemidesmosomer skadas",
+      "Kan börja med bara klåda!"
+    ],
+    "symptom": [
+      "Klåda",
+      "Ospecifika lesioner",
+      "Hårdare blåsor"
+    ],
+    "diagnostik": [
+      "IgA-AK BP180 & BP230 → Hemidesmosomavlossning",
+      "Biopsi IF",
+      "Intakta blåser är ledtråd"
+    ],
+    "behandling": [
+      "Grupp 3-4 kortisonkräm",
+      "Prednisolon/metotrexat vid utbrett",
+      "Såromläggning",
+      "Punktera de större blåsorna, konservativt"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 26,
+    "diagnos": "Pemfigus",
+    "kategori": "Blåsdermatoser",
+    "info": [
+      "Pemfigus vulgaris vanligaste varianten",
+      "Intraepidermal blåsbildning",
+      "Desmosomer skadas",
+      "Börjar ofta med blåsor"
+    ],
+    "symptom": [
+      "Mindre klåda än pemfigus",
+      "Slappare blåsor",
+      "Spruckna blåsor är ledtråd",
+      "Bålen och slemhinnor"
+    ],
+    "diagnostik": [
+      "Desmoglein 1 och 3 → Desmosomavlossning",
+      "Pemfigus foliaceus är enbart Desmoglein 1"
+    ],
+    "behandling": [
+      "Prednisolon",
+      "Rituximab",
+      "Sår- och blåsvård"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 27,
+    "diagnos": "Dermatitis herpetiformis",
+    "kategori": "Blåsdermatoser",
+    "info": [
+      "Har inget med HSV att göra, ser bara ut som herpes",
+      "Starkt kopplat till celiaki"
+    ],
+    "symptom": [
+      "Intensiv klåda",
+      "Små vesiklar",
+      "Exkoriationer",
+      "Ofta symmetriskt",
+      "Armbågar, knän, rumpa, rygg, skuldror, hårbotten"
+    ],
+    "diagnostik": [
+      "Celiakiutredning",
+      "Hudbiopsi"
+    ],
+    "behandling": [
+      "Glutenfri kost",
+      "Dapson → hämmar neutrofiler"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 28,
+    "diagnos": "Bältros",
+    "kategori": "Blåsdermatoser",
+    "info": [
+      "Reaktivering av VZV",
+      "Bältros i ansikte/öga ska tas på allvar!"
+    ],
+    "symptom": [
+      "Brännande känsla längst dermatom",
+      "Därefter vesiklar längst dermatom",
+      "Allmänpåverkan",
+      "Smärtsamt!"
+    ],
+    "diagnostik": [
+      "Ofta klinisk bild",
+      "PCR från vesikel"
+    ],
+    "behandling": [
+      "Valaciklovir tidigt",
+      "NSAID/Paracetamol",
+      "---"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 29,
+    "diagnos": "Keratosis pilaris",
+    "kategori": "Genetiska hudsjukdomar",
+    "info": [
+      "Är knappt en sjukdom...",
+      "Hyperkeratinisering av hårfolliklar",
+      "Vanligt på sträcksidor"
+    ],
+    "symptom": [],
+    "diagnostik": [],
+    "behandling": [],
+    "kommentar": ""
+  },
+  {
+    "id": 30,
+    "diagnos": "Neurofibromatos typ 1",
+    "kategori": "Genetiska hudsjukdomar",
+    "info": [
+      "Mutation i NF-1 genen",
+      "Påverkar ytliga nervsystemet och blodkärl"
+    ],
+    "symptom": [
+      "\\> 6 café-au-lait-fläckar",
+      "Fräknar i hudveck",
+      "Neurofibrom",
+      "Lisch noduli i ögonen"
+    ],
+    "diagnostik": [
+      "Ställs utifrån symptomkriterierna ovan"
+    ],
+    "behandling": [
+      "Ingen botande behandling",
+      "Symptomatisk behandling",
+      "Ögonkontroller"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 31,
+    "diagnos": "Iktyos",
+    "kategori": "Genetiska hudsjukdomar",
+    "info": [
+      "Fiskfjällssjukan",
+      "Mutation i keratinocytfunktion i stratum corneum",
+      {
+        "heading": "Former",
+        "items": [
+          {
+            "text": "Collodion baby",
+            "note": "term för nyfött barn med hård colloid hud"
+          },
+          {
+            "text": "Harlequin ichtyosis",
+            "note": "allvarligaste formen"
+          },
+          {
+            "text": "Iktyosis vulgaris",
+            "note": "vanligaste och mildaste formen, torr fjällande hud"
+          },
+          {
+            "text": "Lamellär iktyos",
+            "note": "Sällsynt, medfödd, inte lika allvarlig som Harleyquin"
+          }
+        ]
+      }
+    ],
+    "symptom": [
+      "Tjock fjällande hud",
+      "Epidermis växer och släpper inte",
+      "Pansarliknande plattor i värsta fall"
+    ],
+    "diagnostik": [
+      "Ofta klinisk bild",
+      "Kan genverifieras"
+    ],
+    "behandling": [
+      "Keratinolytika",
+      "Mjukgörande",
+      "Retionoider ibland"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 32,
+    "diagnos": "Androgen alopeci",
+    "kategori": "Håravfallssjukdomar",
+    "info": [
+      "Drabbar alla män och kvinnor",
+      "Män i högre utsträckning",
+      "Naturligt förlopp"
+    ],
+    "symptom": [
+      "Börjar hos män framifrån, vegeta hairline",
+      "Börjar hos kvinnor mitt på hjässan"
+    ],
+    "diagnostik": [
+      "Kliniskt bild"
+    ],
+    "behandling": [
+      "Män → minoxidril",
+      "Kvinnor → finasterid"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 33,
+    "diagnos": "Telogent effluvium",
+    "kategori": "Håravfallssjukdomar",
+    "info": [
+      "Stress håravfall",
+      "Många hårsäckar går in i telogena fasen samtidigt"
+    ],
+    "symptom": [
+      "Diffust håravfall över hela skalpen",
+      "Generell hårförtunning"
+    ],
+    "diagnostik": [
+      "Klinisk bild",
+      "Pull test"
+    ],
+    "behandling": [
+      "Ta bort utlösande stressfaktor",
+      "Sätt ut stressande läkemedel",
+      "Eventuell minoxidril"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 34,
+    "diagnos": "Alopecia areata",
+    "kategori": "Håravfallssjukdomar",
+    "info": [
+      "Autoimmun sjukdom",
+      "Vanligare än alla andra autoimmuna sjukdomar tillsammans"
+    ],
+    "symptom": [
+      "Utropstecken hårstrån",
+      "Gula fläckar i hårbotten",
+      "Fläckvis, välavgränsat håravfall",
+      "Inga ärr"
+    ],
+    "diagnostik": [
+      "Klinisk bild",
+      "Pull test"
+    ],
+    "behandling": [
+      "Grupp 3-4 kortisonkräm",
+      "Ev immunmodulerande/JAK-hämmare"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 35,
+    "diagnos": "Ärrbildande alopeci",
+    "kategori": "Håravfallssjukdomar",
+    "info": [
+      "Behöver inte kunna så mycket om dem",
+      {
+        "heading": "Typer",
+        "items": [
+          "Lichen planopilaris",
+          "Folliculitis decalvans",
+          "DLE",
+          "Morfea",
+          "---"
+        ]
+      }
+    ],
+    "symptom": [],
+    "diagnostik": [],
+    "behandling": [],
+    "kommentar": ""
+  },
+  {
+    "id": 36,
+    "diagnos": "Naevus comedonicus",
+    "kategori": "Benigna hudtumörer och tumörliknande tillstånd",
+    "info": [
+      "Hårfollikelnaevus"
+    ],
+    "symptom": [
+      "Komedoliknande svarta pluggar",
+      "Linjär utbredning"
+    ],
+    "diagnostik": [
+      "Klinisk bild"
+    ],
+    "behandling": [
+      "Behövs inte om asymtomatiskt",
+      "Ev keratinolytika",
+      "Ev retionoider",
+      "Ev kirurgi"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 37,
+    "diagnos": "Naevus sebaceus",
+    "kategori": "Benigna hudtumörer och tumörliknande tillstånd",
+    "info": [
+      "Talgkörtelnaevus",
+      "Medfödd hudförändring"
+    ],
+    "symptom": [
+      "Oftast i hårbotten/ansikte",
+      "Ofta hårlöst område"
+    ],
+    "diagnostik": [
+      "Klinisk bild"
+    ],
+    "behandling": [
+      "Expektans",
+      "Ev uppföljning vid förändring"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 38,
+    "diagnos": "Melanocytära naevi",
+    "kategori": "Benigna hudtumörer och tumörliknande tillstånd",
+    "info": [
+      {
+        "heading": "Typer",
+        "items": [
+          "Intradermalt naevus",
+          "Epidermalt naevus",
+          "Compound naevus",
+          "Tardiva naevi = förvärvade melanocytära naevi",
+          "Atypiska naevi = avvikande/förändrade melanocytära naevi",
+          "Dysplastiska naevus = histologisk benämning av atypiskt naevi"
+        ]
+      }
+    ],
+    "symptom": [
+      "Kan skava",
+      "Estetisk problematik ibland"
+    ],
+    "diagnostik": [
+      "Dermatoskopi"
+    ],
+    "behandling": [
+      "Aldrig lasra!",
+      "Excision vid MM misstanke",
+      "Ev excision vid skavande"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 39,
+    "diagnos": "Halonaevi",
+    "kategori": "Benigna hudtumörer och tumörliknande tillstånd",
+    "info": [
+      "Som ett melanocytärt naevi, men med lymfocytär attack som förstör kringliggande melanocyter",
+      "Ibland tecken på vitiligo",
+      "Kan ses runt MM, men då assymetriskt"
+    ],
+    "symptom": [
+      "Annulärt naevi",
+      "Kringliggande uppklarning",
+      "Främst på ryggen"
+    ],
+    "diagnostik": [
+      "Dermatoskopi & Makroskopisk bild"
+    ],
+    "behandling": [
+      "Ingen behandling",
+      "Excision om MM misstanke"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 40,
+    "diagnos": "Naevus recurrens",
+    "kategori": "Benigna hudtumörer och tumörliknande tillstånd",
+    "info": [
+      "Naevi som kommer tillbaka efter excision av melanocytärt neavus",
+      "Benignt hos barn",
+      "Var uppmärksam om det växer/kommer tillbaka senare"
+    ],
+    "symptom": [
+      "Ofta samma som naevuset innan"
+    ],
+    "diagnostik": [
+      "Klinisk bild",
+      "Dermatoskopi"
+    ],
+    "behandling": [
+      "Excision igen om malign misstanke"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 41,
+    "diagnos": "Lentigo solaris",
+    "kategori": "Benigna hudtumörer och tumörliknande tillstånd",
+    "info": [
+      "Solmärken",
+      "Möjligt förstadie till seborroiskt keratos"
+    ],
+    "symptom": [
+      "Välavgränsade bruna fläckar",
+      "Makulära"
+    ],
+    "diagnostik": [
+      "Klinisk bild",
+      "Dermatoskopi"
+    ],
+    "behandling": [
+      "Ingenting"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 42,
+    "diagnos": "Melasma",
+    "kategori": "Benigna hudtumörer och tumörliknande tillstånd",
+    "info": [
+      "Vanligast hos fitspatrick 3 och 4"
+    ],
+    "symptom": [
+      "Asymptomatisk",
+      "Symmetrisk",
+      "Oregelbunndna kanter",
+      "Grönt typ..."
+    ],
+    "diagnostik": [
+      "Klinisk bild",
+      "Underliggande solexponerning, p-piller, tyroidea-fel"
+    ],
+    "behandling": [
+      "Ingenting"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 43,
+    "diagnos": "Cafe au lait",
+    "kategori": "Benigna hudtumörer och tumörliknande tillstånd",
+    "info": [
+      "Ökad melaninproduktion",
+      "Normalt antal melanocyter"
+    ],
+    "symptom": [
+      "Asymptomatisk",
+      "Kaffeliknande fläck"
+    ],
+    "diagnostik": [
+      "Klinisk bild"
+    ],
+    "behandling": [
+      "Ingenting",
+      "Var uppmärksam om det är >6 st, kan vara NF-1"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 44,
+    "diagnos": "Seborroiska keratoser",
+    "kategori": "Benigna hudtumörer och tumörliknande tillstånd",
+    "info": [
+      "Keratinocytderiverad tumör",
+      "Väldigt vanligt"
+    ],
+    "symptom": [
+      "Påklistrat utseende",
+      "Kan klia",
+      "Gulbruna",
+      "Upphöjda"
+    ],
+    "diagnostik": [
+      "Dermatoskopi"
+    ],
+    "behandling": [
+      "Ingenting",
+      "Excision vid evolution"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 45,
+    "diagnos": "Dermatofibrom",
+    "kategori": "Benigna hudtumörer och tumörliknande tillstånd",
+    "info": [
+      "Benignt",
+      "= nodulus cutaneus",
+      "= benignt fibröst histiocytom",
+      "Fibros + makrofager bildar brungrå nodulur"
+    ],
+    "symptom": [
+      "Kan skava",
+      "Ingenting annars"
+    ],
+    "diagnostik": [
+      "Dimple sign",
+      "Dermatoskopi"
+    ],
+    "behandling": [
+      "Ingenting"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 46,
+    "diagnos": "Keloider",
+    "kategori": "Benigna hudtumörer och tumörliknande tillstånd",
+    "info": [
+      "Ärreaktion utanför ärret efter trauma eller kirurgi"
+    ],
+    "symptom": [
+      "Plack/noduli utanför ärr"
+    ],
+    "diagnostik": [
+      "Klinisk bild"
+    ],
+    "behandling": [
+      "Intralesionell kortisoninjektion",
+      "Ev kryo"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 47,
+    "diagnos": "Hypertroft ärr",
+    "kategori": "Benigna hudtumörer och tumörliknande tillstånd",
+    "info": [
+      "Överdriven ärreaktion inom ärret efter trauma eller kirurgi",
+      "Minskar risk genom att täcka med tejp"
+    ],
+    "symptom": [
+      "Estetiskt"
+    ],
+    "diagnostik": [
+      "Klinisk bild"
+    ],
+    "behandling": [
+      "Bara profylaktisk tejp"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 48,
+    "diagnos": "Skin tag",
+    "kategori": "Benigna hudtumörer och tumörliknande tillstånd",
+    "info": [
+      "= fibrom",
+      "= fibroepithelial polyp"
+    ],
+    "symptom": [
+      "Kan snävas i kläder"
+    ],
+    "diagnostik": [
+      "Klinisk bild"
+    ],
+    "behandling": [
+      "Klippa av"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 49,
+    "diagnos": "Epidermoidcysta",
+    "kategori": "Benigna hudtumörer och tumörliknande tillstånd",
+    "info": [
+      "Keratininehållande dermal cysta från infundibulum",
+      "Ej från talgkörtel"
+    ],
+    "symptom": [
+      "Central prick",
+      "Upphöjd noduli",
+      "Hudfärgad"
+    ],
+    "diagnostik": [
+      "Dermatoskopi"
+    ],
+    "behandling": [
+      "Poppas!",
+      "---"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 50,
+    "diagnos": "Infantila kapillära hemangiom",
+    "kategori": "Kärltumörer",
+    "info": [
+      "Vanligaste benigna hudtumören hos barn",
+      "Synlig inom 4 veckor",
+      "Spontanregress ofta",
+      {
+        "heading": "Typer",
+        "items": [
+          "Superficiell",
+          "Djup"
+        ]
+      }
+    ],
+    "symptom": [
+      "Ev smärta",
+      "Ev blödning",
+      "Ev kosmetiskt"
+    ],
+    "diagnostik": [
+      "UL/MR vid djup misstanke"
+    ],
+    "behandling": [
+      "Ev propanolol"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 51,
+    "diagnos": "Naevus flammeus",
+    "kategori": "Kärltumörer",
+    "info": [
+      "= Eldsmärke",
+      "= Port wine stain",
+      "Försämring med åldern",
+      "Kapillär kärlmissbildning"
+    ],
+    "symptom": [
+      "Sturge-webers syndrom om över trigeminus",
+      "Ev epelepsi, glaukom, kognitiv påverkan vid SWS"
+    ],
+    "diagnostik": [
+      "Klinisk bild"
+    ],
+    "behandling": [
+      "Uppföljning vid risklokalisation"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 52,
+    "diagnos": "Naevus simplex",
+    "kategori": "Kärltumörer",
+    "info": [
+      "= Storkbett",
+      "Vidgade kapillärer",
+      "Ofta i nacken/pannan",
+      "Försvinner ofta med åldern"
+    ],
+    "symptom": [
+      "Rubromakulär",
+      "Borttryckbar"
+    ],
+    "diagnostik": [
+      "Klinisk bild"
+    ],
+    "behandling": [
+      "Ingen"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 53,
+    "diagnos": "Pyogent granulom",
+    "kategori": "Kärltumörer",
+    "info": [
+      "Benign kärlrik hudtumör",
+      "Snabbväxande",
+      "Ofta efter mindre trauma"
+    ],
+    "symptom": [
+      "Kan göra ont",
+      "Snävas i kläder"
+    ],
+    "diagnostik": [
+      "Dermatoskopi"
+    ],
+    "behandling": [
+      "Planexcision",
+      "Diatermi (bränna bort med el)",
+      "---"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 54,
+    "diagnos": "Malignt melanom",
+    "kategori": "Maligna hudtumörer",
+    "info": [
+      {
+        "heading": "Typer",
+        "items": [
+          "Superficial spreading melanoma",
+          "Nodulära melanom",
+          "Lentigo maligna melanom",
+          "Akrala lentiginösa melanom"
+        ]
+      }
+    ],
+    "symptom": [
+      "Blöda, klia, ulcurera"
+    ],
+    "diagnostik": [
+      "Dermatoskopi - Chaos and clues",
+      "ABCDE",
+      "Biopsi, PAD",
+      "Tjockleksbestämmelse"
+    ],
+    "behandling": [
+      "Excision ned till och med subkutis",
+      "Biopsi av portvaktskörtel om MM >1mm tjock",
+      "Ev fjärrmetastasutredning",
+      "Ev systemisk behandling med ex. immunterapi"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 55,
+    "diagnos": "Superficial spreading melanoma",
+    "kategori": "Maligna hudtumörer",
+    "info": [
+      "60% av alla MM",
+      "Horisontell växt i 2 år, sedan på djupet"
+    ],
+    "symptom": [
+      "Inte mycket till en början"
+    ],
+    "diagnostik": [
+      "Generell MM diagnostik"
+    ],
+    "behandling": [
+      "Generell MM behandling"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 56,
+    "diagnos": "Nodulära melanom",
+    "kategori": "Maligna hudtumörer",
+    "info": [
+      "20% av alla MM",
+      "Växer på djupet",
+      "Ofta icke pigmenterade"
+    ],
+    "symptom": [
+      "Snabbare progress än SSM"
+    ],
+    "diagnostik": [
+      "Generell MM diagnostik"
+    ],
+    "behandling": [
+      "Generell MM behandling"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 57,
+    "diagnos": "Lentigo maligna melanom",
+    "kategori": "Maligna hudtumörer",
+    "info": [
+      "Ses främst hos äldre i ansiktet",
+      "Kallas i början lentigo maligna = in situ",
+      "Lång horisontell växtfas innan växt på djupet"
+    ],
+    "symptom": [
+      "Generella MM symptom"
+    ],
+    "diagnostik": [
+      "Generell MM diagnostik"
+    ],
+    "behandling": [
+      "Buckyröntgen",
+      "Utöver generell MM behandling"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 58,
+    "diagnos": "Akrala lentiginösa melanom",
+    "kategori": "Maligna hudtumörer",
+    "info": [
+      "Benämnelse för melanom som förekommer på handflator, fotsulor, under naglar"
+    ],
+    "symptom": [
+      "Generella MM symptom"
+    ],
+    "diagnostik": [
+      "Generell MM diagnostik"
+    ],
+    "behandling": [
+      "Generell MM behandling"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 59,
+    "diagnos": "Keratoakantom",
+    "kategori": "Maligna hudtumörer",
+    "info": [
+      "Snabbväxande",
+      "Solexponerade områden",
+      "Går ofta i regress av sig själv",
+      "Svår att skilja från högt differentierad skivepitelcancer"
+    ],
+    "symptom": [
+      "Kupolformad nodulus",
+      "Central keratinplugg"
+    ],
+    "diagnostik": [
+      "Biopsi, PAD"
+    ],
+    "behandling": [
+      "Excision"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 60,
+    "diagnos": "Skivepitelcancer",
+    "kategori": "Maligna hudtumörer",
+    "info": [
+      "= SCC",
+      "Snabbväxande",
+      "Liknar keratoakantom",
+      "Går inte i regress av sig själv...",
+      "UV-ljus, kroniska bensår och HPV är riskfaktorer",
+      "SCC-in situ kallas Mb Bowen"
+    ],
+    "symptom": [
+      "Ömmande"
+    ],
+    "diagnostik": [
+      "White circles i dermatoskopet",
+      "Biopsi, PAD"
+    ],
+    "behandling": [
+      "Ecxision"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 61,
+    "diagnos": "Aktinisk keratos",
+    "kategori": "Maligna hudtumörer",
+    "info": [
+      "Ses som ett premalignt stadie till SCC",
+      "Solexoserade ytor",
+      "Fältdysplasi"
+    ],
+    "symptom": [
+      "Fjällande makula/plack",
+      "Främst handrygg och ansikte",
+      "Känns som sandpapper"
+    ],
+    "diagnostik": [
+      "Klinisk bild",
+      "Dermatoskopi",
+      "Ev biopsi vid SCC osäkerhet"
+    ],
+    "behandling": [
+      "Solskydd",
+      "Enstaka → kryotermi",
+      "Multipla → 5-FU/fluorouracil kräm",
+      "---"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 62,
+    "diagnos": "Kronisk plack psoriasis",
+    "kategori": "Psoriasis",
+    "info": [
+      "Basen till all psoriasis",
+      "90% av all psoriasis",
+      "Kan bli olika fenotyper",
+      "Kan ändra fenotyper över tid",
+      "Stark ärftlig bakgrund",
+      "HLA-C 06:02 vanligaste mutation",
+      "Kan triggas av infektioner, alkohol, rökning, läkemedel, övervikt",
+      "Immunmedierad inflammatorisk sjukdom",
+      "IL23/IL17",
+      "Koppling till psoriasisartrit",
+      "5% blir värre av solljus"
+    ],
+    "symptom": [
+      "Tydligt avgränsande, röda och fjällande plack",
+      "Silverfärgad fjäll",
+      "Nagelpitting, onkolys"
+    ],
+    "diagnostik": [
+      "Klinisk bild",
+      "Biopsi vid oklarhet",
+      "Svårighetsgrad bestämms utifrån kroppsyta täckt"
+    ],
+    "behandling": [
+      "Mjukgörande",
+      "Grupp 1-3 kortisonkräm",
+      "Vitamin-D kräm",
+      "Kalcineurinhämmare",
+      "Ocklusionsbehandling",
+      "Metotrexat",
+      "TNF-hämmare"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 63,
+    "diagnos": "Invers psoriasis",
+    "kategori": "Psoriasis",
+    "info": [
+      "Psoriasis främst i hudveck",
+      "Kan vara svårt att skilja från böjvekseksem"
+    ],
+    "symptom": [
+      "Ofta inte lika fjällande"
+    ],
+    "diagnostik": [
+      "Klinisk bild"
+    ],
+    "behandling": [
+      "Psoriasisbehandling"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 64,
+    "diagnos": "Guttat psoriasis",
+    "kategori": "Psoriasis",
+    "info": [
+      "Mer akut debut",
+      "Associerat med tonsillit och sjärtfluss"
+    ],
+    "symptom": [
+      "Mindre, droppformade plack"
+    ],
+    "diagnostik": [
+      "Klinisk bild",
+      "Anamnes"
+    ],
+    "behandling": [
+      "Psoriasisbehandling"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 65,
+    "diagnos": "Pustulosis palmoplantaris (PPP)",
+    "kategori": "Psoriasis",
+    "info": [
+      "Starkt kopplad till rökning"
+    ],
+    "symptom": [
+      "Smärtsamma pustler i händer och fötter"
+    ],
+    "diagnostik": [
+      "Klinisk bild"
+    ],
+    "behandling": [
+      "Rökstopp",
+      "Grupp 3 kortisonkräm",
+      "Mjukgörande"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 66,
+    "diagnos": "Generaliserad pustulär psoriasis (GPP)",
+    "kategori": "Psoriasis",
+    "info": [
+      "Akut!",
+      "Potentiellt livshotande",
+      "IL-36 driven istället"
+    ],
+    "symptom": [
+      "Systemisk påverkan",
+      "Feber",
+      "Extrakutana manifestationer såsom ARDS",
+      "Pustler som smälter ihop till varsjöar"
+    ],
+    "diagnostik": [
+      "Klinisk diagnos",
+      "CRP, LPK, elektrolyter, lever/njure",
+      "Odling från pustlar om infektion misstänks"
+    ],
+    "behandling": [
+      "Inläggning!",
+      "Specialistbehandling - metotrexat, TNF-hämmare, IL-hämmare",
+      "---"
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 67,
+    "diagnos": "Akne",
+    "kategori": "Akne och andra adnexla sjukdomar",
+    "info": [
+      "Inflammation i talgkörtelapparaten",
+      "Cutibacterium acnes proliferation",
+      "Genetik, stress, hormonella förändringar, yttre faktorer kan trigga akne",
+      "Diet har ingen betydelse",
+      {
+        "heading": "Typer",
+        "items": [
+          {
+            "text": "Infantil akne",
+            "note": "6v - 1åå"
+          },
+          {
+            "text": "Banrdomsakne",
+            "note": "Debut 1-6åå"
+          },
+          {
+            "text": "Akne tarda",
+            "note": "Vuxen akne"
+          }
+        ]
+      }
+    ],
+    "symptom": [
+      "Estetiskt",
+      "Ärrbildning",
+      "Hypo- och hypopigmentering"
+    ],
+    "diagnostik": [
+      "Klinisk diagnos"
+    ],
+    "behandling": [
+      {
+        "heading": "Topikal",
+        "items": [
+          {
+            "text": "Adapelen/retinol",
+            "note": "Antiinflammatoriskt, motverkar hyperkeratinisering"
+          },
+          {
+            "text": "Epiduo/annat kombopreparat",
+            "note": "Kombinerar retinol och bensoylperoxid"
+          },
+          {
+            "text": "Azelainsyra",
+            "note": "Antibakteriellt och motverkar hyperkeratinisering"
+          }
+        ]
+      },
+      {
+        "heading": "Per oral",
+        "items": [
+          {
+            "text": "Lymecyklin",
+            "note": "Tetracyklin, antibiotika"
+          },
+          {
+            "text": "Isotretinoin",
+            "note": "Retinoid, många biverkningar, funkar bra, ges direkt vid ärrgivande akne"
+          },
+          {
+            "text": "Hormonella preparat",
+            "note": "P-piller har bra effekt mot akne"
+          }
+        ]
+      }
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 68,
+    "diagnos": "Rosacea",
+    "kategori": "Akne och andra adnexla sjukdomar",
+    "info": [
+      "Inga komedoner som vid akne",
+      "Inflammatorisk sjukdom",
+      "Störd reglering av blodkärl",
+      "Kombination inflammatorisk talgkörtelapparat",
+      "Rosacea fulminans är en svårare variant"
+    ],
+    "symptom": [
+      "Rodnad/flushing",
+      "Teleangiektasier",
+      "Papler och pustler",
+      "Försämras av sol"
+    ],
+    "diagnostik": [
+      "Klinisk diagnos"
+    ],
+    "behandling": [
+      "Behandlar bara papulopustulös Rosacea",
+      {
+        "heading": "Topikal",
+        "items": [
+          "Metronidazol",
+          "Azelainsyra",
+          "Ivermektin"
+        ]
+      },
+      {
+        "heading": "Per oral",
+        "items": [
+          "Tetracyklin"
+        ]
+      }
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 69,
+    "diagnos": "Perioral dermatit",
+    "kategori": "Akne och andra adnexla sjukdomar",
+    "info": [
+      "Runt munnen",
+      "Fri zon närmast läpparna"
+    ],
+    "symptom": [
+      "Papler",
+      "Vesikler",
+      "Ej komedoner",
+      "Ej cystor",
+      "Ej klåda"
+    ],
+    "diagnostik": [
+      "Klinisk bild"
+    ],
+    "behandling": [
+      "Undvik kortisonkräm",
+      "Undvik irriterande hudvårdsprodukter",
+      {
+        "heading": "Mild (topikalbehandling)",
+        "items": [
+          "Kalceurinhämmare",
+          "Metronidazol",
+          "Azaleinsyra",
+          "Svavel"
+        ]
+      },
+      {
+        "heading": "Måttlig/svår (systembehandling)",
+        "items": [
+          "Tetracyklin",
+          "Erytromycin"
+        ]
+      }
+    ],
+    "kommentar": ""
+  },
+  {
+    "id": 70,
+    "diagnos": "Hidradenitis suppurativa",
+    "kategori": "Akne och andra adnexla sjukdomar",
+    "info": [
+      "= HS",
+      "Kronisk follikulär inflammation"
+    ],
+    "symptom": [
+      "Smärtsamma djupa lesioner",
+      "Axiller, ljumskar, anogenitalt",
+      "Komedoner",
+      "Noduli",
+      "Fistlar",
+      "Recidiverande förlopp"
+    ],
+    "diagnostik": [
+      "Klinisk diagnos"
+    ],
+    "behandling": [
+      "Rökstopp och viktnedgång",
+      "Klindamycinlösning",
+      "Tetracyklin p.o.",
+      "Smärtlindring och sårvård"
+    ],
+    "kommentar": ""
+  }
+]
